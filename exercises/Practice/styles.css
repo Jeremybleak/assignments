@@ -1,0 +1,30 @@
+body {
+    margin: 370px;
+    margin-top: 0px;
+    background-color: lightgray;
+}
+
+h1, h2 {
+    font-family: Georgia;
+    text-align: center;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+img {
+    float: left;
+}
+a:visited{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+label{
+    text-transform: uppercase;
+}
