@@ -2,13 +2,18 @@ body{
     background-color: #111111;
     
 }
+@font-face{
+    font-family: starFont;
+    src: url('./assets/Starjedi.ttf')
+}
 h1{
     color: #E2E80F;
     text-align: center;
     font-size: 300%;
     -webkit-text-fill-color: #111111;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #E2E80F
+    -webkit-text-stroke-color: #E2E80F;
+    font-family: starFont;
 }
 p {
     color: #eeeeee;
@@ -25,5 +30,5 @@ p {
 }
 #film-description{
     font-size: 95%;
-    font-family: italic;
+    font-family: initial;
 }
