@@ -1,0 +1,186 @@
+body{
+    background-color: black;
+    height: 3000px;
+}
+@font-face{
+    font-family: Oswald;
+    src: url("/assets/Oswald-Bold.ttf")
+}
+@font-face{
+    font-family: Roboto;
+    src: url("/assets/Roboto-Regular.ttf")
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.egg{
+    color: black;
+}
+html,body {
+    height: 100%;
+}
+.space{
+    height: 800px;
+    margin-bottom: 24px
+}
+.space2{
+    height: 100px;
+}
+.trio{
+    height: 600px;
+    background-color: whitesmoke;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    text-align: left;
+    font-family: Oswald;   
+    margin-top: 100px;
+    width: 100%
+}
+
+p{
+    font-family: Roboto;
+    font-size: 90%;
+    padding-right: 48px;
+    color: black;
+    margin-top: 4px;
+}
+.trio > div{
+    /* border: 2px black solid; */
+    height: 100%;
+    background-color:  white;
+    color: black;
+    width: 90%;
+    border-radius: 8%;
+    margin-left: 16px;
+    padding: 8px;
+    z-index: 10;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.png{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+
+.top{
+    height: 40px;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 99%;
+    border: 1px black solid;
+    color: white;
+    font-family: Oswald;
+}
+h1{
+    text-align: left;
+    margin-left: 24px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    color: whitesmoke;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    z-index: 1;
+    text-decoration: underline #ffe01b;
+    font-family: Oswald;
+    font-size: 64px;
+}
+.quote{
+    border: 2px solid #ffe01b;
+    background-color: #ffe01b;
+    color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+}
+
+.title2{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    color: whitesmoke;
+    align-items: center;
+    margin-top: 64px;
+    width: 100%;
+    z-index: 1;
+    font-family: Oswald;
+}
+#myVideo {
+   bottom: 50px;
+    width: 100%;
+}
+
+.vidDiv {
+    width: 98%;
+    position: absolute;
+    margin-top: 16px;
+}
+.butt{
+    font-family: Oswald;
+    background-color: #ffe01b;
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 1%;
+    width: 24%;
+    font-size: 12px;
+    display: inline-block;
+    left: 220px;
+}
+.link2{
+    text-decoration: none;
+    color:black;
+}
+@media(max-width: 738px){
+    #myVideo{
+        width: 98%;
+        margin-left: 3px;
+    }.top{
+        left: 4px;
+    }
+    .png{
+        width: 40px;
+        height: 40px;
+    }
+    .space{
+        height: 300px;
+    }.trio{
+        font-size: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        height: 60%;
+       
+    }
+    .trio > div{
+        background-color: white;
+        color: black;
+        border-radius: 0%;
+        box-shadow: 0px 0px;
+        border: 1px black solid;
+        padding: 1px;
+        margin-left: 0px;
+    }
+    .title{
+        font-size: 42px;
+    }
+    .title2{
+        margin-top: 38px;
+        font-size: 14px
+    }
+}

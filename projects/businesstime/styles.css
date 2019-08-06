@@ -1,0 +1,90 @@
+html,body {
+    height: 100%;
+}
+body{
+ height: 100px;
+ background-color:black;
+}
+h1{
+    text-align: center;
+}
+@font-face{
+    font-family: Oswald;
+    src: url("/assets/Oswald-Bold.ttf")
+}
+@font-face{
+    font-family: Roboto;
+    src: url("/assets/Roboto-Regular.ttf")
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.top{
+    height: 40px;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 99%;
+    border: 1px black solid;
+    color: white;
+    font-family: Oswald;
+}
+.get{
+    color: white;
+    font-family: Oswald;
+}
+.png{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+.space{
+    height: 100px;
+    background-color: black;
+    margin-bottom: 48px;
+    margin-top: 0%;
+}
+.divLab{
+    background-color: whitesmoke;
+    height: 500px;
+    display: grid;
+    padding: 4%;
+    font-family: Roboto;
+    align-items: center;
+}
+.divLab > label{
+    display: grid;
+    height: 48px;
+}
+.name{
+    width: 20%;
+}
+input{
+    width: 90%;
+
+}
+.phone{
+    width: 20%;
+}
+.submit{
+    background-color: Green;
+    font-family: Oswald;
+    margin-top: 1%;
+    font-size: 24px;
+}
+@media(max-width: 738px){
+    input{
+        width: 100%;
+    }
+    .phone{
+        width: 40%;
+    }
+    .name{
+        width: 30%;
+    }
+}

@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+}
+.body1{
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin:0;
+    color: #325050;
+    background-image: url("http://www.csszengarden.com/214/huntington.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 338px;
+    background-position: -8px -110px;
+}
+@font-face{
+    src: url("./assets/LibreBaskerville-Regular.ttf");
+    font-family: Libre
+}
+@font-face{
+    src: url("./assets/JuliusSansOne-Regular.ttf");
+    font-family: Julius
+}
+@font-face{
+    src: url("./assets/verdemoderna.ttf");
+    font-family: verde;
+}
+p{
+    text-align: left;
+ 
+    padding-left: 144px;
+    padding-right: 72px;
+    font-family: Libre, sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+h3{
+    font-family: Julius, sans-serif;
+    padding-left: 144px;
+    text-align: left;
+    color: #2e484c;
+    display: block;
+    font-size: 25px;
+}
+
+.header{
+    /* background-color: red; */
+    border-top: 12px solid #2e484c;
+    text-align: center;
+    color: white;
+}
+.header > h1{
+    margin-top: 100px;
+}
+
+.header2{
+    background-color: transparent;
+    border-top: 12px solid #2e484c;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    grid-gap: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+.headerbutt{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: Libre;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    opacity: .7;
+}
+.headerbutt:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+.arrow{
+    grid-column-start: 3;
+    grid-row-start: 3;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    font-size: 50px;
+    color: white;
+    opacity: .5;
+}
+.arrow:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+.bod1{
+    background-color: white;
+}
+.side1{
+    background-color: rgba(138,188,159,0.3);
+    
+}
+u{
+    /* text-decoration: dotted; */
+}
+.bod2{
+    background-color: rgba(138,188,159,0.3);
+}
+.side2{
+    background-color: rgba(138,188,159,.5);
+}
+.bod3{
+    /* background-color: teal; */
+}
+.side3{
+    background-color: rgba(138,188,159,0.3);
+}
+.footer1{
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 3
+}
+.footer2{
+    background-color: #134347;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: verde;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 23px;
+    color:rgba(255, 255, 255, 0.5);
+}
+@media(max-width: 738px){
+    .header{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    p{
+        padding: 0;
+        margin-top: 24px;
+        margin-bottom: 5px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    h3{
+        font-size: 1.5em;
+        padding: 0;
+        width: 80%;
+        margin-left: 50px;
+        display: block;
+    }
+    .header2{
+       display: none;
+    }
+    .bod1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .side1{
+        grid-row-start: 7;
+        grid-row-end:8;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .bod2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .side2{
+        grid-row-start: 8;
+        grid-row-end:9;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .bod3{
+        /* background-color: teal; */
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .side3{
+        background-color: tan;
+        display: none;
+    }
+    .footer1{
+        background-color: yellow;
+        grid-column-start: 1;
+        grid-column-end: 3
+    }
+    .footer2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: space-around;
+    }
+}
