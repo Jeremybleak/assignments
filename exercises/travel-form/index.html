@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TRAVEL NOW!</h1>
+    <div class="box">
+        <form name="travel">
+            <h2>ENTER INFO:</h2><br>
+            <input type="text" id='fName'><label>First Name</label> <br>
+            <input type="text" id='lName'><label>Last Name</label> <br>
+            <input type="number" id="age"><label>Age</label> <br>
+            
+            <input value="Male" type="radio" name="gender"><label>Male</label>
+            <input value="Female" type="radio" name="gender"> <label>Female</label> <br> <br>
+            
+            <h4>Where Ya Headed?</h4>
+            <input value="SLC, UT" type="radio" name="travel"><label>SLC, UT</label>
+            <input value="Eagle Mountain, UT" type="radio" name="travel"><label>Eagle Mountain, UT</label>
+            <input value="vSchool, UT" type="radio" name="travel"><label>VSchool, UT</label><br><br>
+            <h4>Dietary Restrictions</h4>
+            <input value="Nuts" type="checkbox" name="restrict"><label>Nuts</label>
+            <input value="People" type="checkbox" name="restrict"><label>People</label>
+            <input value="Lactose" type="checkbox" name="restrict"><label>Lactose</label>
+        </form>
+        <button id="submit">Submit</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

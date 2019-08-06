@@ -1,0 +1,11 @@
+*{
+    margin: auto;
+    text-align: center;
+}
+
+#djBox{
+    width: 500px;
+    height: 1000px;
+    background-color: black;
+   
+}
