@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    margin: 0%;
+    background-color: black;
+}
+.head{
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    color: black;
+    background-image: url(http://ilovemylsi.com/wp-content/uploads/loser.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    align-content: center;
+    width: 100%;
+
+}
+.body1{
+    color: white;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

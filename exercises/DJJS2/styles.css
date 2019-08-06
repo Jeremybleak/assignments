@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: space-between;
+}
+div{
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    margin-top: 48px;
+    
+}
+.one:hover{
+background-color: red;
+border-bottom-right-radius: 25%;
+transform: rotate(45deg);
+border-top-left-radius: 25%;
+transition-duration: 250ms;
+}
+.two:hover{
+    background-color: aqua;
+    transition-duration: 500ms;
+    transform: scale(1)scale(-1);
+}
+.three:hover{
+    background-color: transparent;
+    transition-duration: 600ms;
+    transform: skew(-70deg)
+}
+.four:hover{
+   background-color: yellow;
+   transform: skew(10deg)scaleY(8);
+   border-radius: 50%;
+   transition-duration: 1000ms;
+
+}
+.five:hover{
+transition: steps(4);
+transition-duration: 1000ms;
+background-color: red;
+transform: rotate(45deg);
+border-radius: 50%;
+}
+.six:hover{
+    border-bottom-right-radius: 25%;
+    background-color: purple;
+    transition: steps(4);
+    transition-duration: 500ms;
+    transform: skew(-70deg);
+    border-radius: 50%;
+
+}
+

@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    text-align: center;
+    
+}
+
+div{
+    color: white;
+}
+.world{
+    border: 1px solid green; 
+    color: purple;
+    border-radius: 20pt;
+}
+.world:hover{
+    color: red;
+    transition-duration: 1500ms;
+    transform: rotate(720deg);
+}
+.evan{
+    border: 1px solid green; 
+    color:red;
+    border-radius: 20pt;
+}
+.evan:hover{
+    color: black;
+    transition-duration: 500ms;
+    transform: rotateX(90deg)
+}
+.evan2{
+    color: purple;
+    border-radius: 20pt;
+    border: 1px solid green; 
+}
+.evan2:hover{
+    transform: scale(.5);
+    transition-duration: 500ms;
+}
