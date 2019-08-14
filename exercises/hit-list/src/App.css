@@ -1,0 +1,69 @@
+body{
+    background-color: silver;
+    margin: 0;
+}
+img{
+    height: 300px;
+    width: 400px;
+}
+
+.mapContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    text-align: center;
+    margin-top: 4px;
+    padding: 8px;
+}
+.personContainer{
+    border: 2px black solid;
+}
+.personContainer:hover{
+    transition-duration: 200ms;
+    box-shadow: 4px 4px 8px black;
+}
+.hov{
+    position: relative;
+}
+.hov:hover{
+   animation-name: closer;
+   animation-duration: 200ms;
+   transition-duration: 200ms;
+   box-shadow: 4px 4px 8px black; 
+   right: 4px;
+}
+.header{
+    margin: 0;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 40px;
+   
+}
+.cool:hover{
+    animation-name: strike;
+    animation-duration: 1s; 
+    transition-duration: 1s;
+    text-decoration: line-through red;
+}
+
+@keyframes strike{
+    0% {text-decoration: none; box-shadow: none;}
+    25% {text-decoration: none; box-shadow: 4px 4px 8px yellow}
+    26% {text-decoration: none;}
+    50% {box-shadow: -4px -4px 8px yellow;}
+    100% {text-decoration: line-through red;}
+}
+@keyframes closer{
+    0% {
+        box-shadow:none; 
+        right: 0px;
+    }
+    100%{
+        box-shadow: 4px 4px 8px black; 
+        right: 4px;
+    }
+}

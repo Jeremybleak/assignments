@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black; 
+    height: 80px;
+    align-items: center;
+    font-size: 32px;
+    list-style: none;
+    margin: 0;
+}
+.footer{
+    background-color: black;
+    height: 218px;
+    width: 100%;
+    opacity: .98;
+    margin: 0;
+}
+.home{
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.happy{
+    text-decoration: none;
+    color: white;
+}
+.happy:hover{
+    /* color: aqua;
+    transition-duration: 100ms;
+    border-bottom: 5px aqua solid; */
+    animation-name: hello2; 
+    animation-duration: 2s;
+    position: relative;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+.happy1{
+    text-decoration: none;
+    color: white;
+    border-radius: 5pt;
+}
+.happy1:hover{
+    color: white;
+    border-bottom: 5px yellow solid;
+    transition-duration: 1s;
+    animation-name: hello1; 
+    animation-duration: 1500ms;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+.about{
+    height: 500px;
+    width: 100%;
+    background-color: yellow;
+}
+ .happy2{
+    text-decoration: none;
+    color: white;
+    
+}
+.happy2:hover{
+    animation-name: hello; 
+    animation-duration: 2s;
+    color: purple;
+    transition-duration: 4s;
+    border-bottom: 5px purple solid;
+
+} 
+.service{
+    height: 500px;
+    width: 100%;
+    background-color: purple;  
+}
+@keyframes hello{
+    0% {
+        color: white; border-bottom:
+         5px white solid
+        }
+    50% {
+        color: white; 
+        border-bottom: 5px purple solid
+    }
+    100% {
+        border-bottom: 5px purple solid; 
+        color: purple}
+}
+@keyframes hello1{
+    0% {
+        color: white; 
+        /* border-bottom: 5px yellow solid; */
+
+    } 
+    50% {
+        color: white; 
+        border-bottom: 5px yellow solid;
+        box-shadow: 2px 2px 64px red;
+
+    }
+    100% {
+        border-bottom: 5px yellow solid; 
+        color: yellow;
+        box-shadow: 0px 0px 64px yellow;
+
+    }
+}
+@keyframes hello2{
+    0% { 
+        bottom:0px;
+        color: white; 
+        border-bottom: 5px white solid
+    }
+    50% {
+        bottom: 8px;
+        color: white; 
+        border-bottom: 5px aqua solid
+    }
+    100% {
+        bottom: 8px;
+        border-bottom: 5px aqua solid; 
+        color: aqua
+    }
+}
