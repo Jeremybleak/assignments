@@ -1,0 +1,29 @@
+.todos{
+    display: grid;
+    border: 1px solid black;
+    grid-gap: 10px;
+    margin: auto;
+    height: 500px;
+    width: 400px;
+    text-align: center;
+}
+.to{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+img{
+    height: 200px;
+    width: 400px
+}
+
+.formBox{
+    height: 300px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.formBox>input{
+    height: 40px;
+}

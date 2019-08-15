@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+
+}
+.Link{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+.about{
+    height: 500px;
+    width: 100%;
+    background-color: aquamarine;
+}

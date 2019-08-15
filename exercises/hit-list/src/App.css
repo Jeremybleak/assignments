@@ -6,6 +6,9 @@ img{
     height: 300px;
     width: 400px;
 }
+.holla:hover{
+    cursor: pointer
+}
 
 .mapContainer{
     display: grid;
