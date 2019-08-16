@@ -20,7 +20,6 @@ class Form extends React.Component{
         e.preventDefault()
         axios.post('https://api.vschool.io/jeremy/todo', this.state)
     }
-
     render(){
         return(
             <div >
