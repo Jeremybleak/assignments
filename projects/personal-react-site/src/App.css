@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+.headPic > img{
+    width: 100%
+}
+.headPic{
+    background: linear-gradient(-45deg, yellow, blue, green, red);
+	background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: grid;
+    grid-template-rows: 8fr 1fr 1fr;
+    justify-content: center;
+    /* background-image: url("https://pokemontcg.io/static/media/pokemon-minimalist.30bc8a16.png") */
+
+}
+form{
+    display: grid;
+    grid-template-columns: 12fr 1fr;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.pokeLogo{
+    border-radius: 25pt;
+    height: 50px;
+    
+}
+
+.nav{
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+
+.Link{
+    text-decoration: none;
+    color: white;
+}
+
