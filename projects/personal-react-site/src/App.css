@@ -10,14 +10,114 @@ body{
 	background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     display: grid;
-    grid-template-rows: 8fr 1fr 1fr;
+    grid-template-rows:  8fr 1fr 12fr;
     justify-content: center;
     /* background-image: url("https://pokemontcg.io/static/media/pokemon-minimalist.30bc8a16.png") */
+    margin-bottom: 0;
+}
+.search-container{
+    margin-bottom: 24px;
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.search-container>form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.search-bar{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.button-search{
+    border-left: none;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.button-search > img{
+    height: 20px;
+    padding: 5px
+    
+}
 
+.icon{
+    height: 24px;
+    width: 28px;
+}
+.home{
+    /* height: 738px; */
+    background-color: black;
+   display: grid;
+   grid-template-rows: 1fr;
+}
+.home-card{
+    height: 360px;
+    align-self: center;
+    grid-column-start: 2;
+}
+.about{
+    background-color: black;
+    color: white;
+    height: 390px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 8fr 1fr; 
+    grid-gap: 16px;
+
+}
+.cards{
+    width: 300px;
+    height: 400px;
+   
+}
+.cards:hover{
+    transition-duration: 400ms;
+    box-shadow: 8px 8px 12px black;
+    transform: translate(-4px)
+}
+.cards1{
+    width: 300px;
+    height: 400px;
+   
+}
+.search-container-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin: auto;
+    grid-gap: 8px;
+}
+.card-container{
+    margin-top: 48px;
+    display: grid;
+    grid-template-rows: 1fr;
 }
 form{
     display: grid;
     grid-template-columns: 12fr 1fr;
+}
+.buttonz > img{
+    height: 20px;
+    padding: 5px;
+    position: relative;
+}
+.buttonz >img:hover{
+    transform: scale(1.5);
+    transition-duration: 200ms;
+}
+.buttonz:hover{
+    cursor: pointer;
+}
+/* .buttonz>img:hover{
+    
+} */
+
+.buttonz{
+    border: none;
+    align-self: center;
+}
+form>input{
+    border: none;
 }
 
 @keyframes gradientBG {
@@ -30,6 +130,29 @@ form{
 	100% {
 		background-position: 0% 50%;
 	}
+}
+@keyframes circle{
+    0% {
+        bottom: 2px;
+    }
+    25% {
+        bottom: 2px;
+        left: 4px;
+    }
+    50% {
+        bottom: 0px;
+        top: 2px;
+        left: 4px; 
+    }
+    75%{
+        bottom: 0px;
+        top: 2px;
+        left: 0px;
+    }
+    90%{
+        top: 0px;
+        left: 0px;
+    }
 }
 .pokeLogo{
     border-radius: 25pt;
@@ -44,6 +167,7 @@ form{
     background-color: black;
     position: sticky;
     top: 0px;
+    z-index: 5;
 }
 
 .Link{
@@ -51,3 +175,42 @@ form{
     color: white;
 }
 
+.cards{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.card-header{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around
+}
+.cardz{
+    border: 1px solid black;
+}
+
+@media(max-width: 738px){
+    .nav{
+        font-size: 35px
+    }
+    .pokeLogo{
+        height: 30px;
+    }
+    .headPic{
+        grid-template-rows:  8fr 2fr 29fr;
+    }
+    .buttonz >img{
+        padding: 8px;
+    }
+    .search-container-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .cards{
+        height: 300px;
+        width: 200px;
+    }
+    .cards1{
+        height: 300px;
+        width: 200px;
+    }
+}

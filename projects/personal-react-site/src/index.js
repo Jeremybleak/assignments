@@ -6,8 +6,8 @@ import PokemonProvider from './PokemonProvider'
 
 ReactDOM.render(
     <PokemonProvider>
-    <BrowserRouter>
-    <App/>
-    </BrowserRouter>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
     </PokemonProvider>, 
     document.getElementById('root'))

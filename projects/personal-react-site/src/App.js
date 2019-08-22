@@ -4,7 +4,7 @@ import Home from './Home'
 import Search from './Search'
 import Profile from './Profile'
 import Nav from './Nav'
-import Header from './Header'
+// import Header from './Header'
 import './App.css'
 // import PokemonProvider from './PokemonProvider';
 
@@ -12,7 +12,7 @@ const App = () =>{
     return(
         <div>
             <Nav/>
-            <Header/>
+            {/* <Header/> */}
             <Switch>
                <Route exact path='/' component={Home} />
                <Route path='/search' component={Search} />

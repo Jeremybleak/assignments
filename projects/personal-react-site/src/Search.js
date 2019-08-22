@@ -1,12 +1,33 @@
 import React from 'react'
+// import Header from './Header'
+import {withRouter} from 'react-router-dom'
 import { Pokemon } from './PokemonProvider';
+import SearchContainer from './SearchContainer'
 
-const Search = (props)=>{
-    console.log(props)
+class Search extends React.Component{
+   constructor(){
+       super()
+
+       this.state={
+           search: ''
+       }
+   }
+    render(){
+    const pokemonMapped = this.props.poke.map(pokes => <SearchContainer key={pokes.id} id={pokes.id} rarity={pokes.rarity} set={pokes.set} pokedex={pokes.nationalPokedexNumber} name={pokes.name} imgUrl={pokes.imgUrl} imageUrlHiRes={pokes.imageUrlHiRes}/>)
     return(
         <div>
-            Search
+            <div className='card-container'>
+                <div className='search-container'>
+                    <form action="" onSubmit={this.props.searchGet}>
+                        <label htmlFor="">Search:</label> <br/><input className='search-bar' name='search' value={this.props.search}  placeholder='Search any Pokemon and get its cards!' onChange={this.props.handleChange}></input><button className='button-search'><img src="https://www.pinclipart.com/picdir/big/15-153148_search-magnifying-glass-icon-black-search-icon-png.png" alt=""/></button>
+                    </form>
+                </div>
+                <div className='search-container-cards'>
+                    {pokemonMapped}
+                </div>
+            </div>
         </div>
     )
 }
-export default Pokemon(Search)
+}
+export default withRouter(Pokemon(Search))

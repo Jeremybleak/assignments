@@ -8,7 +8,9 @@ class PokemonProvider extends React.Component{
         
         this.state={
             search:'',
-            poke: []
+            poke: [],
+            save: JSON.parse(localStorage.getItem('savedPokemon')) || [],
+            saved: false
         }
     }
    
@@ -18,12 +20,28 @@ class PokemonProvider extends React.Component{
             [name]:value
         })
     }
-    
+    saveFunc = (id) =>{
+        axios.get(`https://api.pokemontcg.io/v1/cards/${id}`).then(response=>{
+            console.log(response.data)
+            this.setState(({save})=>({save:[...save, response.data ]}), ()=> {
+                console.log(this.state.save)
+                localStorage.setItem('savedPokemon', JSON.stringify(this.state.save))
+            })
+        })
+    }
+    deleteAll = () =>{
+        localStorage.removeItem('savedPokemon')
+        
+    }
+    deleteFunc = (id) =>{
+       this.setState(({save}) => ({save: save.filter(poke => poke.card.id !== id)}), () => {
+           console.log(this.state.save)
+           localStorage.setItem('savedPokemon', JSON.stringify(this.state.save))
+       })
+    }
     searchGet= (e) =>{
         e.preventDefault()
-        console.log(this.state.search)
         axios.get(`https://api.pokemontcg.io/v1/cards?name=${this.state.search}`).then(response =>{
-            console.log(response.data.cards)
             this.setState({poke:response.data.cards})
         })
     }
@@ -33,7 +51,7 @@ class PokemonProvider extends React.Component{
 
     render(){
         return(
-            <Provider value={{searchGet: this.searchGet, handleChange: this.handleChange, ...this.state,}}>{this.props.children}</Provider>
+            <Provider value={{deleteAll: this.deleteAll, searchGet: this.searchGet, handleChange: this.handleChange, saveFunc: this.saveFunc,deleteFunc:this.deleteFunc, ...this.state,}}>{this.props.children}</Provider>
         )
     }
 }
