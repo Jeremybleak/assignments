@@ -5,7 +5,7 @@ const Home = () =>{
         <div>
             <Header/>
             <div className='home'>
-                <div className='about'> 
+                {/* <div className='about'> 
                     <img className='home-card' src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Pokemon_Trading_Card_Game_cardback.jpg/220px-Pokemon_Trading_Card_Game_cardback.jpg" alt=""/>
                     <div>
                         <h1>About</h1>
@@ -14,7 +14,7 @@ const Home = () =>{
                         </div>
                     </div>
                 <div>wow</div>
-                <div>wow</div>
+                <div>wow</div> */}
             </div>
         </div>
     )

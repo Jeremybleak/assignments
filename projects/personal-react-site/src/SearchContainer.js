@@ -23,7 +23,7 @@ class SearchContainer extends Component {
                     ?
                     <p>Saved!</p>
                     :
-                    <button  onClick={this.saveCard}>Save</button>
+                    <button className='save-button'  onClick={this.saveCard}>Save</button>
                      }
                    
                     <h4>Rarity: {this.props.rarity}</h4>
