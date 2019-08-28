@@ -5,7 +5,7 @@ import { Pokemon } from './PokemonProvider';
 class SearchContainer extends Component {
     constructor(props){
         super(props)
-        // console.log(props.save,props.id)
+
         this.state = {
             included: props.save.every(savedItem => savedItem.card.id !== props.id)
         }
@@ -28,8 +28,7 @@ class SearchContainer extends Component {
                    
                     <h4>Rarity: {this.props.rarity}</h4>
                 </div>
-                <img className='cards' alt='' src={this.props.imageUrlHiRes}/>
-                
+                <img className='cards' alt='pokemon card high resolution' src={this.props.imageUrlHiRes}/>
             </div>
         )
     }

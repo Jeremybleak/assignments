@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='footer'>
            <a href='https://www.linkedin.com/in/jeremybleak/'> <img src={Linkedin} alt=""/></a>
-           <a href=''> <img src={Github} alt=""/></a>
+           <a href='https://github.com/Jeremybleak/assignments'> <img src={Github} alt=""/></a>
         </div>
     );
 };

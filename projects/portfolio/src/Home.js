@@ -1,10 +1,10 @@
 import React from 'react';
 import Smoke from './Assets/smoke.mp4'
-import Nav from './Nav';
+import Menu from './Menu';
 const Home = () => {
     return (
         <div className='hero'>
-            <Nav/>
+            <Menu/>
             <video src={Smoke} autoPlay muted ></video>
               <h1 className='hero-h1'>
                   <span>J</span>

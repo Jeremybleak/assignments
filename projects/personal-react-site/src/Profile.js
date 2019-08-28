@@ -11,7 +11,7 @@ class Profile extends React.Component{
                 <h1>Saved Cards:</h1>
                 <button onClick={this.props.deleteAll}>Delete All</button>
                 <div className='search-container-cards'>
-                {mappedSavedCards}
+                    {mappedSavedCards}
                 </div>
             </div>
         )

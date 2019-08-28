@@ -61,7 +61,7 @@ export default PokemonProvider
 export const Pokemon = Comp => {
     return (props) =>
         <Consumer>
-        {value => <Comp {...value} {...props}/>}
+            {value => <Comp {...value} {...props}/>}
         </Consumer>
     
 }

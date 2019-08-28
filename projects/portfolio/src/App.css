@@ -1,4 +1,3 @@
-
 body{
     margin: 0px;
 }
@@ -26,7 +25,8 @@ video{
     margin: 0 auto;
     font-size: 30px;
     opacity: 0;
-    animation: fadedown 1s linear 6s forwards, bounce 2.5s linear 10s infinite;
+    animation: fadedown 1s linear 6s forwards,
+    bounce 2.5s linear 10s infinite;
     overflow: hidden;
     transform: translateY(50%);
     padding: 0px
@@ -65,6 +65,164 @@ video{
     opacity: 0;
     display: inline-block;
     animation: animate 1s linear forwards;
+}
+
+.nav{
+    height: 6vh;
+    color: black;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    border-top: 1px solid rgba(0, 0, 0, .2)
+}
+.Link{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 25px;
+}
+.Link:hover{
+    animation: links 1s linear forwards;
+}
+
+/* Project */
+.project{
+    height: 100%;
+    margin-bottom: 16px;
+}
+.project-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 800pt;
+}
+.project-container > div{
+    padding: 20px;
+}
+.title{
+    margin: auto;
+    width: 80%;
+    font-size: 160px;
+    position: relative;
+    top: 50px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.project1{
+    background-color: red;
+}
+.project2{
+    color: white;
+    background-image: url('./Assets/RPG-screen-shot.png');
+    background-size: cover;
+}
+
+/* About */
+.about{
+    height: 100%;
+    margin-bottom: 16px;
+}
+.about-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+}
+.about-container> div{
+    padding: 20px;
+}
+.bio{
+    background: #1f4954;
+    color: whitesmoke
+}
+.profile-picture{
+    background-image: url('./Assets/Jeremysitting.JPEG');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer */
+.footer{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    filter: grayscale(1);
+    background-color: whitesmoke;
+    height: 10vh;
+}
+.footer > a > img{
+    height: 60px;
+    margin: 0;
+}
+
+/* Menu */
+.menu{
+    position: absolute;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    height: 10vh;
+    z-index: 4;
+}
+.menu > a > button{
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    border:none;
+}
+.menu > a {
+    margin-left: 5%;
+}
+.menu > a >button:hover{
+    cursor: pointer;
+}
+
+/* animations */
+@keyframes opacity{
+    0%{
+        opacity: 0
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadedown{
+    0%{
+        opacity: 0;
+        transform: translateY(-8px)
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0px)
+    }
+    10%{
+        transform: translateY(4px)
+    }
+    30%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px)
+    }
 }
 @keyframes animate{
     0%{
@@ -114,17 +272,8 @@ video{
 .hero-h1>span:nth-child(12){
     animation-delay: 3.8s;
 }
-@keyframes opacity{
-    0%{
-        opacity: 0
-    }
-    90%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
+/* media querries */
 @media(max-width: 850px){
     .hero-h1 > span{
         font-size: 35px;
@@ -152,67 +301,27 @@ video{
     .hero-h1>span:nth-child(12){
         animation-delay: 3.4s;
     }
-}
-.about{
-    height: 100vh;
-}
-.nav{
-    position: absolute;
-    color: white;
-    font-size: 50px;
-    animation: navbar 7s linear 1;
-    z-index: 100;
-    width: 100%;
-    opacity: .5;
-}
-.footer{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    filter: grayscale(1);
-    background-color: whitesmoke;
-}
-.footer > a > img{
-    height: 60px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-@keyframes navbar{
-    0%{
-        opacity: .1;
+    .nav{
+        width: 100%;
     }
-    90%{
-        opacity: .1;
+    .title{
+        margin: 0;
+        width: 100%;
+        font-size: 500%;
+        top: 24px;
     }
-    100%{
-        opacity: .5;
+    .project-container{
+        grid-template-columns: 1fr;
+        width: 100%
     }
-}
-@keyframes fadedown{
-    0%{
-        opacity: 0;
-        transform: translateY(-8px)
+    .project1{
+        grid-column-end: 2;
     }
-    50%{
-        opacity: .5;
+    .about-container{
+        grid-template-columns: 1fr;
+        width: 100%
     }
-    100%{
-        opacity: 1;
-        transform: translateY(0px)
-    }
-}
-@keyframes bounce{
-    0%{
-        transform: translateY(0px)
-    }
-    10%{
-        transform: translateY(4px)
-    }
-    30%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(0px)
+    .profile-picture{
+        height: 280px;
     }
 }
