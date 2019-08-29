@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    scroll-behavior: smooth;
 }
 section{
     height: 100vh;
@@ -101,7 +102,7 @@ video{
     grid-template-columns: 1fr 1fr;
     height: 800pt;
 }
-.project-container > div{
+.project-container > a{
     padding: 20px;
 }
 .title{
@@ -114,13 +115,45 @@ video{
     font-weight: 800;
 }
 .project1{
-    background-color: red;
+    background-image: url('./Assets/eagle.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .project2{
-    color: white;
-    background-image: url('./Assets/RPG-screen-shot.png');
+    /* color: white; */
+    background-image: url('./Assets/RPG.png');
+    background-repeat: no-repeat;
     background-size: cover;
+
 }
+.project2 > h1{
+    background-color: white;
+    width: 60%;
+    text-align: center;
+    
+}
+.project3{
+    background-image: url('./Assets/pokeCards.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+.project-name{
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
 
 /* About */
 .about{
@@ -139,12 +172,33 @@ video{
 }
 .bio{
     background: #1f4954;
-    color: whitesmoke
+    color: whitesmoke;
+    
+}
+.bio >h1{
+    font-size: 45px;
 }
 .profile-picture{
     background-image: url('./Assets/Jeremysitting.JPEG');
     background-size: cover;
     background-position: center;
+}
+/* Resume */
+.resume{
+    height: 100%;
+    margin: auto;
+    margin-bottom: 16px;
+    width: 80%;
+}
+.resume-container{
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    background-image: url('./Assets/Resume.png');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 /* Footer */
@@ -285,6 +339,24 @@ video{
     }
     .title-space{
         padding: 8px;
+    }
+    .hero-h1>span:nth-child(1){
+        animation-delay: 2s;
+    }
+    .hero-h1>span:nth-child(2){
+        animation-delay: 2.2s;
+    }
+    .hero-h1>span:nth-child(3){
+        animation-delay: 2.3s;
+    }
+    .hero-h1>span:nth-child(4){
+        animation-delay: 2.4s;
+    }
+    .hero-h1>span:nth-child(5){
+        animation-delay: 2.5s;
+    }
+    .hero-h1>span:nth-child(6){
+        animation-delay: 2.6s;
     }
     .hero-h1>span:nth-child(8){
         animation-delay: 2.8s;

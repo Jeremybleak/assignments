@@ -17,6 +17,7 @@ body{
     grid-template-rows:  8fr 1fr 12fr;
     justify-content: center;
     margin-bottom: 0;
+    height: 100vh;
 }
 .search-container{
     margin-bottom: 24px;
@@ -103,7 +104,7 @@ form{
     grid-template-columns: 12fr 1fr;
 }
 .buttonz > img{
-    height: 20px;
+    height: 30px;
     padding: 5px;
     position: relative;
 }
@@ -201,7 +202,8 @@ form>input{
 
 @media(max-width: 738px){
     .nav{
-        font-size: 35px
+        font-size: 25px;
+        align-items: center;
     }
     .pokeLogo{
         height: 30px;

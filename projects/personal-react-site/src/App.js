@@ -4,12 +4,10 @@ import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 
 // my components
-import Home from './Home'
 import Search from './Search'
 import Profile from './Profile'
 import Nav from './Nav'
-// import Header from './Header'
-// import PokemonProvider from './PokemonProvider';
+import Header from './Header'
 
 // Stylesheet
 import './App.css'
@@ -20,7 +18,7 @@ const App = () =>{
             <Nav/>
             {/* <Header/> */}
             <Switch>
-               <Route exact path='/' component={Home} />
+               <Route exact path='/' component={Header} />
                <Route path='/search' component={Search} />
                <Route path='/profile' component={Profile} />
             </Switch>

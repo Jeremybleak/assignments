@@ -7,6 +7,7 @@ import More from './More';
 import Footer from './Footer';
 import Nav from './Nav';
 import Project from './Project'
+import Resume from './Resume';
 const App = () => {
     return (
         <div>
@@ -16,6 +17,7 @@ const App = () => {
             <Switch>
                 <Route exact path='/' component={Project} />
                 <Route path='/about' component={About} />
+                <Route path='/resume' component={Resume} />
             </Switch>
             <Footer/>
         </div>

@@ -6,7 +6,8 @@ const About = () => {
                 <h1 className='title'>About.</h1>
                 <div className='about-container'>
                     <div className='bio'>
-                        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit reiciendis ex animi! Dolore, mollitia deserunt. Ut, quibusdam inventore eaque rem esse aliquid earum provident expedita atque quidem nemo cum dolores.</h2>
+                        <h1><span>Jeremybleak99@gmail.com</span></h1>
+                        <span>the end</span>
                     </div>
                     <div className='profile-picture'>
                     </div>

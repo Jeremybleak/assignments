@@ -1,6 +1,5 @@
 import React from 'react'
-// import Header from './Header'
-// import {withRouter} from 'react-router-dom'
+
 import { Pokemon } from './PokemonProvider';
 import SearchContainer from './SearchContainer'
 

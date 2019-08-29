@@ -5,7 +5,9 @@ const Home = () => {
     return (
         <div className='hero'>
             <Menu/>
-            <video src={Smoke} autoPlay muted ></video>
+            <video autoPlay="autoplay" muted="muted" defaultMuted playsInline preload="auto">
+                <source src={Smoke}/>
+            </video>
               <h1 className='hero-h1'>
                   <span>J</span>
                   <span>E</span>

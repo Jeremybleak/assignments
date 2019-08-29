@@ -5,15 +5,15 @@ const Project = () =>{
         <div className='project'>
             <h1 className='title'>Projects.</h1>
             <div className='project-container'>
-                <div className='project1'>
-                    <h1>Eagle Imaging</h1>
-                </div>
-                <div className='project2'>
-                    <h1>RPG: Maze of Glory</h1>
-                </div>
-                <div>
-                    <h1>Poke-Card API</h1>
-                </div>
+               <a href='http://eagleimaging.surge.sh/' className='project1'><div>
+                    <h1 className='project-name'>Eagle Imaging</h1>
+                </div></a>
+               <a href='https://github.com/Jeremybleak/assignments/tree/master/projects/RPG' className='project2'><div>
+                    <h1 className='project-name'>RPG: Maze of Glory</h1>
+                </div></a> 
+                <a href="http://pokecards.surge.sh/" className='project3'><div>
+                    <h1 className='project-name'>Poke-Card API</h1>
+                </div></a>
             </div>
         </div>
     )
