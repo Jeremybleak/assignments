@@ -5,14 +5,20 @@ body{
     height: 1500px;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
     margin:0;
     color: #325050;
-    background-image: url("http://www.csszengarden.com/214/huntington.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url('http://www.csszengarden.com/214/gridlines-opaque.png'), url("http://www.csszengarden.com/214/contours@2x.png"), url("http://www.csszengarden.com/214/huntington.jpg" );
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: none, none, cover;
+    background-position: relative,relative, center;
+    background-attachment: fixed, fixed, scroll;
     height: 338px;
     background-position: -8px -110px;
+    /* border-top: #325050 16px solid; */
+}
+.first-container{
+    width: 100%;
 }
 @font-face{
     src: url("./assets/LibreBaskerville-Regular.ttf");
@@ -20,7 +26,7 @@ body{
 }
 @font-face{
     src: url("./assets/JuliusSansOne-Regular.ttf");
-    font-family: Julius
+    font-family: "Julius"
 }
 @font-face{
     src: url("./assets/verdemoderna.ttf");
@@ -28,7 +34,6 @@ body{
 }
 p{
     text-align: left;
- 
     padding-left: 144px;
     padding-right: 72px;
     font-family: Libre, sans-serif;
@@ -48,29 +53,44 @@ h3{
 }
 
 .header{
-    /* background-color: red; */
-    border-top: 12px solid #2e484c;
-    text-align: center;
-    color: white;
+ display: flex;
+ color: white;
+ justify-content: center;
+ align-items: center;
+ border-top: #2e484c 12px solid;
+ 
 }
-.header > h1{
-    margin-top: 100px;
+.logo{
+    height: 150px;
+    align-self: center;
+}
+.header > div > h1{
+    margin: 0;
+    margin-left: 24px;
+    margin-bottom: 16px;
+    font-family: "Julius", sans-serif;
+    font-size: 48px;
+}
+.header > div > h2 {
+    margin: 0;
+    margin-left: 24px;
+    font-style: italic;
+    font-family: Libre;
 }
 
 .header2{
     background-color: transparent;
-    border-top: 12px solid #2e484c;
+    /* border-top: #2e484c 12px solid ; */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 4fr 1fr 1fr;
+    grid-template-columns: 2fr 4fr 1fr 1fr;
     grid-gap: 4px;
     background-color: rgba(0, 0, 0, 0.1);
-
 }
 .headerbutt{
     grid-column-start: 2;
     grid-row-start: 3;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(177, 13, 13, 0.3);
     font-family: Libre;
     font-size: 16px;
     text-align: center;
@@ -101,20 +121,18 @@ h3{
 }
 .side1{
     background-color: rgba(138,188,159,0.3);
-    
 }
-u{
-    /* text-decoration: dotted; */
-}
+
+
 .bod2{
     background-color: rgba(138,188,159,0.3);
+    background-image: url('http://www.csszengarden.com/214/bamboo.png');
+    
 }
 .side2{
     background-color: rgba(138,188,159,.5);
 }
-.bod3{
-    /* background-color: teal; */
-}
+
 .side3{
     background-color: rgba(138,188,159,0.3);
 }

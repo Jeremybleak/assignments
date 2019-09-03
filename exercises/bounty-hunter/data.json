@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Evan",
+        "last-name": "Nay",
+        "living": true,
+        "bounty-amount": "$1,000",
+        "type": "sith",
+        "id": "000302987623"
+    },
+    {
+        "name": "Jeremy",
+        "last-name": "Bleak",
+        "living": "unknown",
+        "bounty-amount": "$1,000,000,000",
+        "type": "jedi",
+        "id": "99302876"
+    },
+    {
+        "name": "Marcus",
+        "last-name": "Peterson",
+        "living": true,
+        "bounty-amount": "$1,000,000",
+        "type": "sith",
+        "id": "878726556"
+    }
+]
