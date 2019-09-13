@@ -102,7 +102,7 @@ video{
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 800pt;
+    height: 100%;
 }
 .project-container > a{
     padding: 20px;
@@ -117,43 +117,88 @@ video{
     font-weight: 800;
 }
 .project1{
-    background-image: url('./Assets/eagle.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #1f4954;
     grid-column-start: 1;
     grid-column-end: 3;
-}
-.project2{
-    /* color: white; */
-    background-image: url('./Assets/RPG.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 380pt;
+    font-family: sans-serif;
 
 }
-.project2 > h1{
-    background-color: white;
-    width: 60%;
+.description-long-box{
+    width: 50%;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #FBFEF9;
     text-align: center;
-    
+
+}
+.project2{
+    display: flex;
+    justify-content: center;
+    background-color: #455561;
+    height: 380pt;
+    font-family: sans-serif;
+}
+.description{
+    color: #FBFEF9;
+    text-align: center;
+}
+
+.project2:hover .rpg-img{
+    display: unset;
+}
+
+.project-name{
+    font-size: 55px;
+    margin: none;
+    color: #FBFEF9;
+}
+.project-alignment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .project3{
-    background-image: url('./Assets/pokeCards.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color:  #7C90A0;
+    display: flex;
+    justify-content: center;
+    height: 380pt;
+    font-family: sans-serif;
+
+}
+.middle-bar{
+    margin: none;
+    height: 4px;
+    width: 30%;
+    margin: none;
+    background-color: #FBFEF9;
+}
+.project1:hover .middle-bar{
+    animation: middlebar 200ms linear 1 forwards;
+}
+.project2:hover .middle-bar{
+    animation: middlebar 200ms linear 1 forwards;
+}
+.project3:hover .middle-bar{
+    animation: middlebar 200ms linear 1 forwards;
+}
+@keyframes middlebar{
+    0%{
+
+    }
+    100%{
+        transform: scale(1.1);
+        background-color: red;
+    }
 }
 a{
     text-decoration: none;
     color: black;
     margin: 0;
-}
-.project-name{
-    background-color: whitesmoke;
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    margin: auto;
 }
 
 
@@ -390,6 +435,13 @@ a{
     }
     .project1{
         grid-column-end: 2;
+        height: 300pt;
+    }
+    .project2{
+        height: 300pt;
+    }
+    .project3{
+        height: 300pt;
     }
     .about-container{
         grid-template-columns: 1fr;
@@ -397,5 +449,11 @@ a{
     }
     .profile-picture{
         height: 280px;
+    }
+    .description-long-box{
+        width: 80%;
+    }
+    .project-name{
+        font-size: 45px;
     }
 }
