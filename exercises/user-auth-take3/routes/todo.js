@@ -2,22 +2,23 @@ const express = require('express')
 const todoRouter = express.Router()
 const Todo = require('../models/todo')
 
+
 todoRouter.route('/')
 
     .get((req, res, next) => {
-        Todo.find({user: req.user._id}, (err, todo) =>{
+        Todo.find({user: req.user._id}, (err, todo)=>{
             if(err){
                 res.status(500)
                 return next(err)
             }
-            return res.send(todo)
+            return res.status(200).send(todo)
         })
     })
 
     .post((req, res, next) => {
         const newTodo = new Todo(req.body)
         newTodo.user = req.user._id
-        newTodo.save((err, todo) =>{
+        newTodo.save((err, newTodo) =>{
             if(err){
                 res.status(500)
                 return next(err)
@@ -28,18 +29,22 @@ todoRouter.route('/')
 
 todoRouter.route('/:_id')
 
-    .get((req, res, next) => {
-        Todo.findOne({_id:req.params._id, user: req.user._id}, (err, todo) =>{
+    .get((req, res, next) =>{
+        Todo.findOne({_id: req.params._id, user: req.user._id}, (err, todo) => {
             if(err){
                 res.status(500)
-                return next(new Error('todo item not found!'))
+                return next(err)
+            }
+            if(!todo){
+                res.status(404)
+                return next(Error('todo item not found'))
             }
             return res.send(todo)
         })
     })
 
     .put((req, res, next) => {
-        Todo.findOneAndUpdate({_id: req.params._id, user: req.user._id}, req.body, {new: true}, (err, todo) => {
+        Todo.findOneAndUpdate({_id: req.params._id, user: req.user._id}, req.body, {new: true}, (err, todo) =>{
             if(err){
                 res.status(500)
                 return next(err)
@@ -49,12 +54,14 @@ todoRouter.route('/:_id')
     })
 
     .delete((req, res, next) => {
-        Todo.findByIdAndRemove({_id: req.params._id, user: req.user._id}, (err, todo) =>{
+        Todo.findOneAndRemove({_id: req.params._id, user: req.user._id}, (err, todo) =>{
             if(err){
                 res.status(500)
                 return next(err)
             }
-            return res.send({msg: "the following was deleted", todo})
+            return res.status(200).send({
+                msg: 'the following todo was deleted', todo
+            })
         })
     })
 
