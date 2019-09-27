@@ -1,0 +1,44 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    background-color: #3E4E50;
+    color: #FACFAD;
+}
+.nav-name-score{
+    /* background-image: url('https://steemitimages.com/DQmUrknJEgHi2gG9wEUZHNrwychPUAef5pg9e4kaMdFZzPK/peach.png'); */
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    font-size: 28px;
+    font-family: 'PT Mono', serif;
+    text-decoration: none;
+}
+.nav-item{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-family: 'PT Mono', serif;
+    font-weight: 200;
+}
+.home-peach{
+    height: 60px;
+}
+.nav-button{
+    background-color: transparent;
+    color: #FACFAD;
+    font-size: 24px;
+    font-family: 'PT Mono', serif;
+    border: none;    
+    font-weight: 200
+}
+
+.nav-name{
+    font-weight: 800;
+    text-decoration: underline;
+    font-size: 28px;
+    font-family: 'PT Mono', serif;
+}
+
+

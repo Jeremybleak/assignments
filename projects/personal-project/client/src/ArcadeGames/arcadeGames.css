@@ -1,0 +1,43 @@
+.game-name{
+    text-align: center;
+    font-size: 28px;
+}
+
+.game-name > a{
+    text-decoration: none;
+    color: black;
+}
+
+.arcade-game-master{
+    background-color: white;
+    height: 90vh;
+    margin-top: 40px;
+}
+
+
+.arcade-game-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 24px;
+}
+.asteroids-display-image{
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/1/13/Asteroi1.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.coming-soon-image{
+    background-image: url('http://papers.co/wallpaper/papers.co-aq65-mickey-mouse-disney-art-29-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+@media(max-width: 796px){
+    .arcade-game-container{
+        width: 100%;
+        grid-template-columns: none;
+    }
+}

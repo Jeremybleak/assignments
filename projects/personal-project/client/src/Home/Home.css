@@ -1,7 +1,39 @@
 .home-title{
     height: 100vh;
-    background-color: red;
-    background-image: url('https://wallpapercave.com/wp/wp4037835.jpg');
+    background-image: url('');
     background-size: cover;
     background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.arcade-title-box{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    color: #3E4E50
+}
+a{
+    color: #3E4E50;
+}
+.peach-logo{
+    background-image: url('https://steemitimages.com/DQmUrknJEgHi2gG9wEUZHNrwychPUAef5pg9e4kaMdFZzPK/peach.png');
+    background-size: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+@media(max-width: 796px){
+    .arcade-title-box{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
 }
