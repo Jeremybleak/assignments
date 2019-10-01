@@ -1,19 +1,23 @@
 .game-name{
     text-align: center;
     font-size: 28px;
+    color: #3E4E50 ;
 }
 
 .game-name > a{
     text-decoration: none;
-    color: black;
+    color: #3E4E50;
 }
 
 .arcade-game-master{
     background-color: white;
     height: 90vh;
     margin-top: 40px;
+    background-color: black
 }
-
+.arcade-game-master-2{
+    background-color: black;
+}
 
 .arcade-game-container{
     width: 80%;
@@ -23,16 +27,16 @@
     grid-gap: 24px;
 }
 .asteroids-display-image{
-    background-image: url('https://upload.wikimedia.org/wikipedia/en/1/13/Asteroi1.png');
+    background-image: url('http://joaokucera.com/wp-content/uploads/2015/11/asteroids-like_cover.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 500px;
 }
 .coming-soon-image{
-    background-image: url('http://papers.co/wallpaper/papers.co-aq65-mickey-mouse-disney-art-29-wallpaper.jpg');
+    background-image: url('https://wallpapersite.com/images/pages/pic_h/11611.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 500px;
 }
 
 @media(max-width: 796px){

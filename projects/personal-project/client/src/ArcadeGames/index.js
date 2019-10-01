@@ -4,7 +4,7 @@ import Nav from '../Nav'
 import {Link} from 'react-router-dom'
 const ArcadeGames = () => {
     return (
-        <div>
+        <div className='arcade-game-master-2'>
             <Nav/>
             <div className='arcade-game-master'>
                 <div className='arcade-game-container'>

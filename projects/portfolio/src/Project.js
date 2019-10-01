@@ -1,5 +1,5 @@
 import React from 'react'
-import RPG from './Assets/RPG.png'
+
 const Project = () =>{
     return(
         <div className='project'>
@@ -11,7 +11,6 @@ const Project = () =>{
                     <h3 className='description-long-box'>Made with HTML and CSS, this is my very first responsive project. It was coursework in VSchool, the goal was to create a website for a company that does not exist. </h3>
                 </div></a>
                <a href='https://github.com/Jeremybleak/assignments/tree/master/projects/RPG' className='project2'><div className='project-alignment'>
-                    {/* <div className='project-image'><img className='rpg-img' src={RPG} /></div> */}
                     <h1 className='project-name'>RPG: Maze of Glory</h1>
                     <div className='middle-bar'></div>
                     <h3 className='description'>Created with JS and the "read-line-sync" package. “The Maze of Glory” is a text based RPG I created to further understand JS in a fun way.</h3>

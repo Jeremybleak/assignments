@@ -6,7 +6,7 @@ const About = () => {
                 <h1 className='title'>About.</h1>
                 <div className='about-container'>
                     <div className='bio'>
-                        <h1><span>Jeremybleak99@gmail.com</span></h1>
+                    <span><h1>Jeremybleak99@gmail.com</h1></span>
                         <span>the end</span>
                     </div>
                     <div className='profile-picture'>

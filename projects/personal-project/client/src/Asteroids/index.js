@@ -35,7 +35,7 @@ export class Asteroids extends Component {
       },
       asteroidCount: 3,
       currentScore: 0,
-      topScore: this.props.score || 0,
+      topScore: localStorage.getItem('topscore') || 0,
       inGame: false
     }
     this.ship = [];
@@ -156,7 +156,7 @@ export class Asteroids extends Component {
     });
 
     // Replace top score
-    if(this.props.score > this.state.topScore){
+    if(this.state.currentScore > this.state.topScore){
       this.setState({
         topScore: this.state.currentScore,
       });
@@ -252,7 +252,7 @@ export class Asteroids extends Component {
       <div>
         { endgame }
         <span className="score current-score" >Score: {this.state.currentScore}</span>
-        <span className="score top-score" >Top Score: {this.props.score}</span>
+        <span className="score top-score" >Top Score: {localStorage.getItem('topscore')}</span>
         <span className="controls" >
           Use [A][S][W][D] or [←][↑][↓][→] to MOVE<br/>
           Use [SPACE] to SHOOT
