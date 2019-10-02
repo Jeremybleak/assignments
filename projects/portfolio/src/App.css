@@ -124,7 +124,6 @@ video{
     justify-content: center;
     height: 380pt;
     font-family: sans-serif;
-
 }
 .description-long-box{
     width: 50%;
@@ -133,7 +132,6 @@ video{
     padding-right: 40px;
     color: #FBFEF9;
     text-align: center;
-
 }
 .project2{
     display: flex;
@@ -170,6 +168,15 @@ video{
     font-family: sans-serif;
 
 }
+.project4{
+    background-color: #437F97;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    height: 380pt;
+    font-family: sans-serif;
+}
 .middle-bar{
     margin: none;
     height: 4px;
@@ -185,6 +192,10 @@ video{
 }
 .project3:hover .middle-bar{
     animation: middlebar 200ms linear 1 forwards;
+}
+.project4:hover .middle-bar{
+    animation: middlebar 200ms linear 1 forwards;
+
 }
 @keyframes middlebar{
     0%{
@@ -224,6 +235,21 @@ a{
 }
 .bio >h1{
     font-size: 45px;
+}
+.bio> span  > h1 > a{
+    color: white
+}
+.bio > span > h2{
+    color: #7C90A0;
+}
+.bio > span >h2 > a {
+    color: white;
+}
+.bio > span >h2 > a:hover{
+    text-decoration: underline
+} 
+.bio> span  > h1 > a:hover{
+    text-decoration: underline;
 }
 .profile-picture{
     background-image: url('./Assets/Jeremysitting.JPEG');
@@ -449,6 +475,10 @@ a{
         height: 300pt;
     }
     .project3{
+        height: 300pt;
+    }
+    .project4{
+        grid-column-end: 2;
         height: 300pt;
     }
     .about-container{
