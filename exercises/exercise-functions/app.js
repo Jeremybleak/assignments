@@ -28,4 +28,21 @@
 // }
 // console.log(stringTime("First Last"))
 
+let obj = {}
 
+// function stringLetters (string) {
+//     for(i=0; i < string.length; i++){
+//         if(){
+
+//         }
+//     }
+// }
+
+
+Jeremy
+
+J 
+e
+r
+e
+y

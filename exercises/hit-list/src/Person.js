@@ -27,6 +27,7 @@ class Person extends React.Component{
         </div>
     )
     }
+
 }
 
 
