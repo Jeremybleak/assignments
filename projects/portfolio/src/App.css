@@ -72,6 +72,7 @@ video{
 
 .nav{
     height: 6vh;
+    font-family: sans-serif;
     color: black;
     width: 80%;
     display: flex;
