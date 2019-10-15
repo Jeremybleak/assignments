@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+}
+.hero{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 90vh;
+    background-image: url('https://wallpapercave.com/wp/wp4665006.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.title{
+    line-height: 0;
+    font-size: 80px;
+    text-decoration: underline yellow;
+    color: white;
+}
+.sub-title{
+    color: white;
+    font-size: 20px;
+    line-height: 0;
+}
+.logo{
+    height: 50px;
+    align-self: center;
+    border-radius: 25px;
+}
+.get-a-quote-button{
+    background: none;
+    color: white;
+    border: none;
+}

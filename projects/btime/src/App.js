@@ -1,0 +1,15 @@
+import React from 'react'
+import Nav from './Nav'
+import './app.css'
+import Hero from './Hero'
+
+const App = () => {
+    return(
+        <div>
+            <Nav/>
+            <Hero/>
+        </div>
+    )
+}
+
+export default App

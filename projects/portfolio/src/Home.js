@@ -1,30 +1,15 @@
-import React from 'react';
-import Smoke from './Assets/smoke.mp4'
-import Menu from './Menu';
+import React from 'react'
+import Menu from './Menu'
 const Home = () => {
     return (
         <div className='hero'>
             <Menu/>
-            <video autoPlay="autoplay" muted="muted" defaultMuted playsInline preload="auto">
-                <source src={Smoke}/>
-            </video>
-              <h1 className='hero-h1'>
-                  <span>J</span>
-                  <span>E</span>
-                  <span>R</span>
-                  <span>E</span>
-                  <span>M</span>
-                  <span>Y</span>
-                  <span className='title-space'></span>
-                  <span>B</span>
-                  <span>L</span>
-                  <span>E</span>
-                  <span>A</span>
-                  <span>K</span>
-              <p className='dev'>Developer</p>
-              </h1>
+            <div className='hero-title'>
+                <h1 className='hello'>hello. My name is <b className='jeremy'>Jeremy</b></h1>
+                <h4>I'm a web Developer<span className='dev'>, and I like <a target='blank' href='https://www.youtube.com/watch?v=CMNry4PE93Y' className='turtles'>turtles</a></span></h4>
+            </div>
         </div>
-    );
-};
+    )
+}
 
 export default Home;
