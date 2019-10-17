@@ -38,6 +38,7 @@ body{
     border-right: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+
 }
 .button-search > img:hover{
     animation: circle 2s infinite;
@@ -109,20 +110,16 @@ form{
     position: relative;
 }
 .buttonz >img:hover{
-    /* transform: scale(1.5); */
-    /* transition-duration: 200ms; */
     animation: circle 2s infinite;
 }
 .buttonz:hover{
     cursor: pointer;
 }
-/* .buttonz>img:hover{
-    
-} */
 
 .buttonz{
     border: none;
     align-self: center;
+    background-color: white;
 }
 form>input{
     border: none;
@@ -224,5 +221,11 @@ form>input{
     .cards1{
         height: 300px;
         width: 200px;
+    }
+    .search-bar{
+        border-right: 1px solid black;
+    }
+    .button-search{
+        border-left: 1px solid black;
     }
 }

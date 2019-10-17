@@ -8,12 +8,3 @@ button.addEventListener('click', function(e){
     let num3 = Number(document.getElementById('cheep').value) * 11
     newArray.innerHTML= (num1 + num2 + num3)
 })
-
-
-
-
-
-
-
-
-
