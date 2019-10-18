@@ -17,7 +17,7 @@ let tank = new Class("Tank", 70,"Spiked Club", 70 )
 const players = ["Barbarian", "Warlock", "Tank"]
 let player = []
 
-function Enemies(name,hp,attack){
+function Enemies(name, hp, attack){
     this.name = name;
     this.hp = hp;
     this.attack = attack;
@@ -73,7 +73,7 @@ function stumble(){
     let random = Math.floor(Math.random()*400)
     if(random > 0){
     isAlive = true
-    }else{
+    } else {
     console.log(`You stumbled across the Treasure room! The Maze Of Glory now belongs to ${name}! You won!~`)
     hasWon = true
     }
