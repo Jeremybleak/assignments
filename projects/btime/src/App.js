@@ -1,13 +1,14 @@
 import React from 'react'
-import Nav from './Nav'
 import './app.css'
 import Hero from './Hero'
+import {Route, Switch} from 'react-router-dom'
 
 const App = () => {
     return(
         <div>
-            <Nav/>
-            <Hero/>
+            <Switch>
+                <Route exact path='/' component={Hero}/>
+            </Switch>
         </div>
     )
 }

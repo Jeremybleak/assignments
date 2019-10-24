@@ -1,20 +1,43 @@
+@font-face{
+    font-family: 'ProximaNova';
+    src: url("./Assets/ProximaNova.ttf");
+}
+*{
+    font-family: 'ProximaNova';
+}
 body{
     margin: 0;
 }
 .nav{
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
-    color: white;
+    background-color: transparent;
     height: 10vh;
     position: sticky;
     top: 0;
+    grid-column-start: 2;
+    width: 56vw;
+    font-family: sans-serif;
+    margin: auto;
+    align-items: center;
+}
+.nav > a{
+    padding: 8px;
+    font-size: 14px;
+    color: #E5E5E5; 
+    text-decoration: none;
+}
+.nav > a:hover{
+    cursor: pointer;
+}
+.nav > img{
+    cursor: pointer;
 }
 .hero{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 90vh;
-    background-image: url('https://wallpapercave.com/wp/wp4665006.jpg');
+    grid-template-rows: 1fr 4fr 1fr;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('https://www.tokkoro.com/picsup/2990127-nature-water-beach-aerial-view-sea___mixed-wallpapers.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -27,23 +50,69 @@ body{
     grid-row-start: 2;
 }
 .title{
-    line-height: 0;
-    font-size: 80px;
-    text-decoration: underline yellow;
-    color: white;
+    font-size: 96px;
+    color: #FFFFFF;
+    font-family: 'ProximaNova';
+    margin-bottom: 8px ;
+    margin: auto;  
+    font-weight: 400;
 }
 .sub-title{
-    color: white;
-    font-size: 20px;
-    line-height: 0;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 8px;
+    font-weight: 100;
 }
 .logo{
-    height: 50px;
+    height: 60px;
     align-self: center;
-    border-radius: 25px;
+    border-radius: 80px;
 }
-.get-a-quote-button{
-    background: none;
-    color: white;
-    border: none;
+.quote-button{
+    background-color: #FFCB26;
+    height: 56px;
+    width: 301px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 900;
+    box-shadow: black 4px 4px 4px;
+    cursor: pointer;
+    letter-spacing: 4px;
+    border: #FFCB26 1px;
+}
+.quote-button:active{
+   box-shadow: black 1px 1px 4px;
+}
+.quote-button:focus{
+    outline: none;
+}
+.dropDown{
+    /* display: none; */
+    height: 120px;
+    width: 125px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #21201F;
+    line-height: 0;
+    text-align: left;
+    justify-content: center;
+    visibility: hidden;
+}
+.middleDropDown{
+    background-color: #32302F;
+}
+.middleDropDown > h4{
+    padding-left: 8px;
+}
+.color{
+    background-color: #FFCB26;
+    height: 20px;
+}
+.dropDown > h4 {
+    height: 10px;
+    padding-left: 8px;
+}
+.service:hover .dropDown{
+    visibility: visible;
 }

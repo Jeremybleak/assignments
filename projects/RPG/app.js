@@ -3,7 +3,6 @@ const readline = require("readline-sync")
 let isAlive = true
 let hasWon = false
 
-
 function Class(title, hp, weapon, attack){
     this.title = title;
     this.hp = hp;
@@ -22,6 +21,7 @@ function Enemies(name, hp, attack){
     this.hp = hp;
     this.attack = attack;
 }
+
 let assassin = new Enemies('Assassin', 40, 35)
 let skeleton = new Enemies('Skeleton', 50, 40) 
 let orc = new Enemies('Orc', 60, 40)
