@@ -87,8 +87,6 @@ body{
     outline: none;
 }
 .dropDown{
-    /* display: none; */
-    height: 120px;
     width: 125px;
     position: absolute;
     display: flex;
@@ -98,21 +96,53 @@ body{
     text-align: left;
     justify-content: center;
     visibility: hidden;
+    
 }
-.middleDropDown{
+.middleDropDown:hover{
     background-color: #32302F;
 }
 .middleDropDown > h4{
     padding-left: 8px;
+    color: white;
+    text-decoration: none;
+}
+.middleDropDown{
+    text-decoration: none;
 }
 .color{
     background-color: #FFCB26;
-    height: 20px;
-}
-.dropDown > h4 {
-    height: 10px;
-    padding-left: 8px;
+    height: 4px;
+    
 }
 .service:hover .dropDown{
     visibility: visible;
+}
+
+
+
+@media(max-width: 800px){
+    .nav{
+        width: 100%;
+        align-items: center;
+    }
+    .nav > a{
+        font-size: 12px;
+        padding-left: 0;
+    }
+    .title{
+        font-size: 64px;
+        text-align: center;
+    }
+    .sub-title{
+        font-size: 16px;
+        text-align: center;
+    }
+    .color{
+        background-color: #FFCB26;
+        height: 4px;
+        justify-self: start;
+    }
+    .dropDown{
+        width: 100px;
+    }
 }

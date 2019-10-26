@@ -7,7 +7,7 @@ const Project = () =>{
             <div className='project-container'>
                <a href='http://eagleimaging.surge.sh/' target='blank' className='project1'><div className='project-alignment'>
                     <h1 className='project-name'>Eagle Imaging</h1>
-                    <h3 className='description-long-box'>Made with HTML and CSS, this is my very first responsive project. It was coursework in VSchool, the goal was to create a website for a company that does not exist. </h3>
+                    <h3 className='description-long-box'>Recreated using React, designed by a UX Designer with Sketch. This is my very first responsive project. It was coursework in VSchool, the goal was to create a website for a company that does not exist. </h3>
                     <button className='project-button'><h3>View Project</h3></button>
                 </div></a>
                <a href='https://github.com/Jeremybleak/assignments/tree/master/projects/RPG' target='blank' className='project2'><div className='project-alignment'>
