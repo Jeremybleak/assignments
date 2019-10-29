@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    height: 200vh;
+}
+.hero{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-start: 1fr 1fr 1fr;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0)), url("./Assets/Jeremycover3.JPEG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+.hero-content{
+    grid-row-start: 2;
+    text-align: center;
+    line-height: .3;
+    font-family: sans-serif;
+    color: #ffff
+}
+.hero-title{
+    font-size: 100px;
+}
