@@ -280,7 +280,7 @@ a{
     height: 100vh;
     width: 80%;
     margin: auto;
-    background-image: url('./Assets/resume-jeremy.png');
+    background-image: url('./Assets/resume.png');
     background-size: 55%;
     background-position: center;
     background-repeat: no-repeat;
@@ -296,7 +296,7 @@ a{
     align-items: center;
     filter: grayscale(1);
     background-color: whitesmoke;
-    height: 10vh;
+    height: 16vh;
 }
 .footer > a > img{
     height: 60px;
