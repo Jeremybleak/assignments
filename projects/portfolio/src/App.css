@@ -37,6 +37,8 @@ section{
    display: grid;
    grid-template-rows: 1fr 1fr 1fr;
    color: white;
+   background-image: url('http://giphygifs.s3.amazonaws.com/media/lSzQjkthGS1gc/giphy.gif');
+   background-repeat: repeat-x;
 }
 .hero-title{
     grid-row-start: 2;

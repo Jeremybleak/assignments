@@ -31,7 +31,7 @@ let evan = new Enemies ('Boss Evan', 40, 40)
 let minotaur = new Enemies ('Minotaur', 70, 45)
 let slime = new Enemies('Slime', 10, 32)
 
-const enemie =[assassin, skeleton, orc, bat, ghoul, evan, minotaur, slime];
+const enemie = [assassin, skeleton, orc, bat, ghoul, evan, minotaur, slime];
 const actions = ['Attack', 'Heal', 'Run']
 console.log('Hello warrior and welcome to the Maze of Glory ive heard a lot about you!')
 const name = readline.question("But, Uhh, im bad at names, what was your name again? ")
@@ -50,7 +50,7 @@ const hero = readline.keyInSelect(players, `And, ${name}, you are a... what are 
     console.log(`Of course, Your lack of shirt and big spiked club shows that you, ${name}, are in fact a hard hitting Tank`)
    console.log(player)
 }
-    console.log(`What lies ahead is the maze of glory! You, ${name} the fearless ${player[0].title} will traverse the maze in search of the glorious treasure that lies deep in the maze. But be careful! This maze is swarming with Enemies in search of the same glory! Good luck ${name}!`)  
+    console.log(`What lies ahead is the maze of glory! You, ${name} the fearless ${player[0].title} will traverse the maze in search of the glorious treasure that lies deep in the maze. But be careful! This maze is swarming with Enemies in search of the same glory! Good luck ${name}!`)
  while(isAlive && !hasWon){
      let question = readline.keyIn("Will you traverse deeper in the maze? [w]- to traverse [n]- to chicken out", {limit: 'wn'})
        if(question=== 'w'){

@@ -6,7 +6,7 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-start: 1fr 1fr 1fr;
-    height: 90vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0)), url("./Assets/Jeremycover3.JPEG");
     background-size: cover;
     background-position: center;
@@ -14,7 +14,6 @@ body{
     margin: 0;
     background-repeat: no-repeat;
 }
-
 .hero-content{
     grid-row-start: 2;
     text-align: center;
@@ -24,4 +23,13 @@ body{
 }
 .hero-title{
     font-size: 100px;
+}
+
+.cont{
+    height: 100vh;
+    margin: 0;
+    background-image: url('./Assets/Jeremycover2.JPEG');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
