@@ -1,5 +1,4 @@
-// Ball machine
-
+// Ball Clock
 const ballClock = ballCount => {
     const minLimit = 4
     const fiveLimit = 11
@@ -39,7 +38,7 @@ const ballClock = ballCount => {
             halfDay++
         }
     } while(ballQueue.join('') !== startingQueue.join(''))
-    console.log()
+    
 }
 
 
