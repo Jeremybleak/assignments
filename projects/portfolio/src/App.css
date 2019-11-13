@@ -37,8 +37,8 @@ section{
    display: grid;
    grid-template-rows: 1fr 1fr 1fr;
    color: white;
-   background-image: url('http://giphygifs.s3.amazonaws.com/media/lSzQjkthGS1gc/giphy.gif');
-   background-repeat: repeat-x;
+   /* background-image: url('http://giphygifs.s3.amazonaws.com/media/lSzQjkthGS1gc/giphy.gif'); */
+   /* background-repeat: repeat-x; */
 }
 .hero-title{
     grid-row-start: 2;
@@ -120,7 +120,7 @@ section{
 }
 .description-long-box{
     width: 50%;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     padding-left: 40px;
     padding-right: 40px;
     color: #FBFEF9;
@@ -429,5 +429,8 @@ a{
     }
     .project-name{
         font-size: 45px;
+    }
+    .project-button{
+        width: 50%;
     }
 }
