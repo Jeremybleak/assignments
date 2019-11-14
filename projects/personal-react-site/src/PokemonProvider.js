@@ -46,9 +46,6 @@ class PokemonProvider extends React.Component{
         })
     }
 
-  
-    
-
     render(){
         return(
             <Provider value={{deleteAll: this.deleteAll, searchGet: this.searchGet, handleChange: this.handleChange, saveFunc: this.saveFunc,deleteFunc:this.deleteFunc, ...this.state,}}>{this.props.children}</Provider>

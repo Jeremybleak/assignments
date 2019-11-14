@@ -20,11 +20,11 @@ const Project = () =>{
                     <h3 className='description'>Created with React, and the packages: “react-router-dom” & “axios”. I made this project as a way to understand how to pull data from APIs/databases, and use of local storage.</h3>
                     <button className='project-button'><h3>View Project</h3></button>
                 </div></a>
-                <a href='https://daddyddb.herokuapp.com' target='blank' className='project4' ><div className='project-alignment'>
+                {/* <a target='blank' className='project4' ><div className='project-alignment'>
                     <h1 className='project-name'>D.D.D.B.</h1>
                     <h3 className='description-long-box'>"Daddy-Daughter Date Boxes" Learned how to use git to work with a team to create a fake business website. Created using React and multiple packages</h3>
-                    <button className='project-button'><h3>View Project</h3></button>
-                </div></a>
+                    <button className='project-button red-button'><h3>Under Matinence</h3></button>
+                </div></a> */}
             </div>
         </div>
     )

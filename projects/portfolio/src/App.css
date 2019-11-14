@@ -178,7 +178,9 @@ section{
     font-size: 16px;
     border: 2px solid white;
 }
-
+.red-button:hover{
+    background-color: red;
+}
 .project-button-small:hover{
     background-color: white;
     color: black;
@@ -188,6 +190,10 @@ section{
     background-color: white;
     color: black;
     cursor: pointer;
+}
+.red-button:hover{
+    background-color: red;
+    color: white;
 }
 .middle-bar{
     margin: none;
@@ -279,16 +285,31 @@ a{
     width: 100%;
 }
 .resume-container{
-    height: 100vh;
+    height: 150vh;
     width: 80%;
     margin: auto;
-    background-image: url('./Assets/resume.png');
+    color: white;
+    /* background-image: url('./Assets/resume.png'); */
     background-size: 55%;
     background-position: center;
     background-repeat: no-repeat;
-
+    background-color: #1f4954;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr 4fr;
 }
-
+.resume-skills{
+    line-height: .2;
+    /* text-align: center; */
+}
+.resume-skills-boundary{
+    /* border-left: 4px solid black; */
+    padding: 4px;
+}
+.resume-skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 /* Footer */
 .footer{
     margin: 0;
