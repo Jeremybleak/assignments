@@ -159,7 +159,6 @@ section{
     justify-content: center;
     height: 380pt;
     font-family: sans-serif;
-
 }
 .project4{
     background-color: #437F97;
@@ -242,6 +241,7 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 80vh;
+    font-family: sans-serif;
 }
 .about-container> div{
     padding: 20px;
@@ -285,18 +285,24 @@ a{
     width: 100%;
 }
 .resume-container{
-    height: 150vh;
+    height: 200vh;
     width: 80%;
     margin: auto;
     color: white;
     /* background-image: url('./Assets/resume.png'); */
+    font-family: sans-serif;
     background-size: 55%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #1f4954;
     display: grid;
+    grid-column-gap: 8px;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr 4fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+.resume-container > div{
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .resume-skills{
     line-height: .2;
@@ -440,7 +446,7 @@ a{
     }
     .about-container{
         grid-template-columns: 1fr;
-        width: 100%
+        width: 100%;
     }
     .profile-picture{
         height: 280px;
