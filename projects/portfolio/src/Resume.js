@@ -6,26 +6,26 @@ const Resume = () => {
         <h1 className='title'>Resume.</h1>
             
             <div className='resume-container'>
-                <div>
+                <div className='resume-name'>
                     <h1>Jeremy Bleak</h1>
+                    <a target='blank' href="https://docs.google.com/document/d/1s_LoaKR1AhbNg6PFxYLcUQ7vzctVb_m9ogv75YwAxko/edit?usp=sharing"><button className='resume-doc-button'>Go to Google Doc</button></a>
                 </div>
                 <div>
-                    <h3>Eagle Mountain, UT
-                        (385)-227-2102
-                        Jeremybleak99@gmail.com
-                    </h3>
+                    <h3>Eagle Mountain, UT </h3>
+                    <h3>(385)-227-2102</h3>
+                    <h3><a href='mailto: jeremybleak99@gmail.com'>Jeremybleak99@gmail.com</a></h3>
                 </div>
                 <div>
                     <h1>PROJECTS:</h1>
                     <div>
-                        <h3>Business Time - http://eagleimaging.surge.sh/ </h3>
+                        <h3>Business Time - <a href='http://eagleimaging.surge.sh/'>http://eagleimaging.surge.sh/</a></h3>
                         <h4>Made with React, this is my very first responsive project. It was coursework in VSchool, the goal was to create a website for a company that does not exist. 
                         Built With: React</h4>
                         <a>GitHub</a>
                     </div>
                     <br/>
                     <div>
-                        <h3>PokeCard API Project - http://pokecards.surge.sh/</h3>
+                        <h3>PokeCard API Project - <a href='http://pokecards.surge.sh/'>http://pokecards.surge.sh/</a></h3>
                         <h4>Created with React, and the packages: “react-router-dom” & “axios”. I made this project as a way to understand how to pull data from APIs/databases, and use of local storage.
                         Built With: React</h4>
                         <a>GitHub</a>
@@ -97,17 +97,16 @@ const Resume = () => {
                     </div>
                 </div>
                 <div>
-                    <h3>EDUCATION</h3>
+                    <h3>EDUCATION:</h3>
                     <div>
-                        <h4>Herriman High, Herriman UT</h4>
-                        — HS Diploma <br/>
+                        <h4>Herriman High, Herriman UT
+                        — HS Diploma </h4>
                         August 2014 - June 2017 <br/>
                         3.4 GPA, Multiple Honors Courses, <br/>
                          2 years of Spanish
                     </div>
                     <div>
-                        <h4>VSchool, SLC UT </h4>
-                        — Certificate of Completion <br/>
+                        <h4>VSchool, SLC UT — Certificate of Completion</h4>
                         July 2019 - September 2019 <br/>
                         Hired as a VSchool TA
                     </div>

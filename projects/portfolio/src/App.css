@@ -37,8 +37,6 @@ section{
    display: grid;
    grid-template-rows: 1fr 1fr 1fr;
    color: white;
-   /* background-image: url('http://giphygifs.s3.amazonaws.com/media/lSzQjkthGS1gc/giphy.gif'); */
-   /* background-repeat: repeat-x; */
 }
 .hero-title{
     grid-row-start: 2;
@@ -194,35 +192,6 @@ section{
     background-color: red;
     color: white;
 }
-.middle-bar{
-    margin: none;
-    height: 4px;
-    width: 30%;
-    margin: none;
-    background-color: #FBFEF9;
-}
-.project1:hover .middle-bar{
-    animation: middlebar 200ms linear 1 forwards;
-}
-.project2:hover .middle-bar{
-    animation: middlebar 200ms linear 1 forwards;
-}
-.project3:hover .middle-bar{
-    animation: middlebar 200ms linear 1 forwards;
-}
-.project4:hover .middle-bar{
-    animation: middlebar 200ms linear 1 forwards;
-
-}
-@keyframes middlebar{
-    0%{
-
-    }
-    100%{
-        transform: scale(1.1);
-        background-color: red;
-    }
-}
 a{
     text-decoration: none;
     color: black;
@@ -298,11 +267,27 @@ a{
     display: grid;
     grid-column-gap: 8px;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.resume-name{
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    flex-direction: column;
+    /* border: 1px solid white; */
 }
 .resume-container > div{
     padding-left: 16px;
     padding-right: 16px;
+}
+.resume-doc-button{
+    background-color: transparent;
+    border: white 2px solid;
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    align-self: flex-start;
+
 }
 .resume-skills{
     line-height: .2;

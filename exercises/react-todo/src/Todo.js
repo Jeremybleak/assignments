@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Todo =(props)=>{
+const Todo= (props)=>{
     return(
         <div className='todos'>
             <h1>{props.title}</h1>
@@ -12,3 +12,5 @@ const Todo =(props)=>{
     )
 }
 export default Todo
+
+
