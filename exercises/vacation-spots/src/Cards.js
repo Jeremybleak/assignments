@@ -15,12 +15,12 @@
 
 import React from 'react'
 
-const Cards =(props) =>{
+const Cards = (props) =>{
     return(
         <div>
-        <h1>Place:{props.place}</h1>
-        <h1>Price:{props.price}</h1>
-        <h1>Best Season:{props.timeToGo}</h1>
+            <h1>Place:{props.place}</h1>
+            <h1>Price:{props.price}</h1>
+            <h1>Best Season:{props.timeToGo}</h1>
         </div>
     )
 }

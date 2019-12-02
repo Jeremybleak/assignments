@@ -21,14 +21,14 @@ const Resume = () => {
                         <h3>Business Time - <a href='http://eagleimaging.surge.sh/'>http://eagleimaging.surge.sh/</a></h3>
                         <h4>Made with React, this is my very first responsive project. It was coursework in VSchool, the goal was to create a website for a company that does not exist. 
                         Built With: React</h4>
-                        <a>GitHub</a>
+                        <a href='https://github.com/Jeremybleak/assignments/tree/master/projects/btime'>GitHub</a>
                     </div>
                     <br/>
                     <div>
                         <h3>PokeCard API Project - <a href='http://pokecards.surge.sh/'>http://pokecards.surge.sh/</a></h3>
                         <h4>Created with React, and the packages: “react-router-dom” & “axios”. I made this project as a way to understand how to pull data from APIs/databases, and use of local storage.
                         Built With: React</h4>
-                        <a>GitHub</a>
+                        <a href='https://github.com/Jeremybleak/assignments/tree/master/projects/personal-react-site'>GitHub</a>
                     </div>
                 </div>
                 <div className='resume-skills-container'>
