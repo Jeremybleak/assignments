@@ -33,31 +33,31 @@ const Resume = () => {
                 </div>
                 <div className='resume-skills-container'>
                         <div>
-                        <h3>DEVELOPMENT:</h3>
-                        <div className='resume-skills'>
-                            <h5>JavaScript</h5>
-                            <h5>ES6</h5>
-                            <h5>React</h5>
-                            <h5>HTML</h5>
-                            <h5>CSS</h5>
-                            <h5>Node.js</h5>
-                            <h5>Express</h5>
-                            <h5>AJAX/HTTP</h5>
-                            <h5>Mongoose</h5>
-                            <h5>MongoDB</h5>
-                            <h5>JSON</h5>
-                            <h5>Git</h5>
-                        </div>
+                            <h3>DEVELOPMENT: </h3>
+                            <div className='resume-skills'>
+                                <h5>JavaScript</h5>
+                                <h5>ES6</h5>
+                                <h5>React</h5>
+                                <h5>HTML</h5>
+                                <h5>CSS</h5>
+                                <h5>Node.js</h5>
+                                <h5>Express</h5>
+                                <h5>AJAX/HTTP</h5>
+                                <h5>Mongoose</h5>
+                                <h5>MongoDB</h5>
+                                <h5>JSON</h5>
+                                <h5>Git</h5>
+                            </div>
                     </div>
                     <div>
                         <h3>OTHER:</h3>
                         <div className='resume-skills'>
-                            <h5>Problem Solving</h5>
-                            <h5>Customer Service</h5>
+                            <h5>ProblemSolving</h5>
+                            <h5>CustomerService</h5>
                             <h5>Management</h5>
-                            <h5>Fast Learner</h5>
-                            <h5>Time Management</h5>
-                            <h5>Power Tools</h5>
+                            <h5>FastLearner</h5>
+                            <h5>TimeManagement</h5>
+                            <h5>PowerTools</h5>
                             <h5>Communication</h5>
                         </div>
                     </div>
