@@ -5,9 +5,9 @@ const Hero = () => {
         <div className='hero-container'>
             <div className='hero'>
                 <div className='hero-content'>
-                    <h1>Hello. my name is Jeremy.</h1>
+                    <h1>Hello. My name is Jeremy.</h1>
                     <h5>I'm a web developer, and I like turtles.</h5>
-                    <h4 className='hero-button'>VIEW MY WORK</h4>
+                    <a href='/'><h4 className='hero-button'>VIEW MY WORK</h4></a>
                 </div>
             </div>
         </div>    
