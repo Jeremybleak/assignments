@@ -10,13 +10,13 @@ const Nav = () => {
                         <a href='#projects'><button className='nav-bar-item'>Projects</button></a>
                     </div>
                     <div>
-                        <a href='/'><button className='nav-bar-item'>Resume</button></a>
+                        <a href='/#resume'><button className='nav-bar-item'>Resume</button></a>
                     </div>
                     <div>
-                        <a href='/'><button className='nav-bar-item'>About</button></a>
+                        <a href='/#about'><button className='nav-bar-item'>About</button></a>
                     </div>
                     <div>
-                        <a href='/'><button className='contact-button'>CONTACT</button></a>
+                        <a href='/#contact'><button className='contact-button'>CONTACT</button></a>
                     </div>
                 </div>
             </div>

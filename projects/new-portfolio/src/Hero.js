@@ -7,7 +7,7 @@ const Hero = () => {
                 <div className='hero-content'>
                     <h1>Hello. My name is Jeremy.</h1>
                     <h5>I'm a web developer, and I like turtles.</h5>
-                    <a href='/'><h4 className='hero-button'>VIEW MY WORK</h4></a>
+                    <a href='/#projects'><h4 className='hero-button'>VIEW MY WORK</h4></a>
                 </div>
             </div>
         </div>    

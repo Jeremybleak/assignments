@@ -35,12 +35,11 @@ a{
 /* hero */
 .hero-container{
     background-color: #181818;
-
 }
 .hero{
     background-color: #181818;
     color: #ffffff;
-    height: 85vh;
+    height: 88vh;
     margin: none;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr ;
@@ -73,6 +72,7 @@ a{
 }
 .hero-button:hover{
     cursor: pointer;
+    text-decoration: underline;
 }
 
 /* navbar */
@@ -82,7 +82,7 @@ a{
     width: 76%;
     margin: auto;
     color: #ffffff;
-    height: 15vh;
+    height: 12vh;
     background-color: #181818;
     align-items: center;
 }
@@ -97,8 +97,9 @@ a{
 }
 .nav-bar-container{
     background-color: #181818;
-    /* position: sticky; */
+    position: sticky;
     top: 0px;
+    z-index: 1;
 }
 .nav-bar-navigation{
     display: flex;
@@ -145,11 +146,11 @@ a{
     margin: auto;
     height: 70vh;
 }
-
 .project-title{
     font-family: 'heebo-extra-bold';
     font-size: 48px;
     letter-spacing: 2px;
+    color: #181818;
 }
 .project-items-container {
     display: flex;
@@ -168,7 +169,6 @@ a{
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.05);
 }
 .project-description{
-    /* padding: 12px; */
     margin: 0px 32px;
 }
 .project-description > h1 {
@@ -187,7 +187,7 @@ a{
     width: 256px;
     height: 90px;
 }
-.project-description > h4 {
+.project-button {
     color: #4072FF;
     font-family: 'heebo-bold';
     grid-row-start: 3;
@@ -195,9 +195,153 @@ a{
     margin-top: 24px;
     letter-spacing: 2.4px;
 }
+.project-description > h4:hover{
+    cursor: pointer;
+}
 .project-image-one{
     height: 40%;
-    background-image: url('https://wallpapercave.com/wp/wp2574296.jpg');
+    background-image: url('https://wallpapercave.com/wp/wp4414202.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+}
+.project-image-two{
+    height: 40%;
+    background-image: url('./assets/rpg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project-image-three{
+    height: 40%;
+    background-image: url('https://o.aolcdn.com/images/dims?quality=85&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F6623d5a6ae583f81ee3515b6b3615c7f%2F204855766%2Flandscape-1456483171-pokemon2.jpg&client=amp-blogside-v2&signature=a66341cc83efebc3c63cadf0db972d9a16e1b05d');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* resume */
+.resume-container{
+    background-color: #181818;
+}
+.resume{
+    height: 250vh;
+    width: 76%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+.resume-items{
+    grid-row-start: 2;
+}
+.resume-title{
+    display: inline-block;
+    font-weight: 800;
+    justify-content: space-between;
+    align-items: center
+}
+.resume-title > h1 {
+    color: #ffffff;
+    font-family: 'heebo-extra-bold';
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-right: 12px;
+    display: inline-block;
+}
+.resume-title > a > h5 {
+    color: #4072FF;
+    font-family: 'heebo-bold';
+    letter-spacing: 3px;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 24px;
+}
+.resume-title > a > h5:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* about */
+
+.about-container{
+    background-color: #F5F2EE;
+}
+
+.about{
+    height: 100vh;
+    width: 76%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    margin: auto;
+}
+.about-flex-one{
+    width: 496px;
+}
+.about-flex-one > h5 {
+    font-size: 16px;
+    color: #656565;
+    line-height: 24px;
+    font-family: 'heebo-medium';
+}
+.about-items{
+    grid-row-start: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.about-title{
+    font-family: 'heebo-extra-bold';
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #181818;
+}
+.profile-pic{
+    background-image: url('./assets/Jeremysitting.JPEG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 408px;
+    filter: saturate(1.2);
+}
+
+.email{
+    color: #4072FF;
+    font-size: 16px;
+    font-family: 'heebo-bold';
+    letter-spacing: 2.4px;
+    line-height: 24px;
+}
+.email:hover{
+    text-decoration: underline;
+}
+.email >h4 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    line-height: 24px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.links> a {
+    color: #4072FF;
+    font-family: 'heebo-bold';
+    font-size: 16px;
+    letter-spacing: 2.4px;
+}
+.links > a:hover{
+    text-decoration: underline;
+}
+
+/* contact */
+.contact-container{
+    background-color: #181818;
+}
+.contact{
+    height: 110vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    width: 76%;
+    margin: auto;
 }
