@@ -246,6 +246,7 @@ a{
     font-size: 48px;
     letter-spacing: 2px;
     margin-right: 12px;
+    margin-bottom: 72px;
     display: inline-block;
 }
 .resume-title > a > h5 {
@@ -260,7 +261,44 @@ a{
     cursor: pointer;
     text-decoration: underline;
 }
+.resume-subtitle{
+    font-family: 'heebo-extra-bold';
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+.resume-project-title-container > h4{
+    display: inline-block;
+    margin-right: 12px;
+}
+.resume-project-name{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'heebo-regular';
+    letter-spacing: 1.2px;
 
+}
+.resume-project-title-container > a{
+    display: inline-block;
+    color: #4072FF;
+    font-family: 'heebo-bold';
+    letter-spacing: 2.4px;
+    margin: 0px 12px;
+    font-size: 20px;
+}
+.resume-project-description{
+    font-size: 16px;
+    color: #B6B6B6;
+    font-family: 'heebo-medium';
+    line-height: 24px;
+    margin: 0;
+    letter-spacing: 0.67px;
+}
+.resume-project-description-container{
+    width: 672px;
+}
 /* about */
 
 .about-container{
