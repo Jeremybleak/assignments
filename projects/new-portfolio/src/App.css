@@ -214,7 +214,7 @@ a{
 }
 .project-image-three{
     height: 40%;
-    background-image: url('https://o.aolcdn.com/images/dims?quality=85&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F6623d5a6ae583f81ee3515b6b3615c7f%2F204855766%2Flandscape-1456483171-pokemon2.jpg&client=amp-blogside-v2&signature=a66341cc83efebc3c63cadf0db972d9a16e1b05d');
+    background-image: url('https://cdn.custom-cursor.com/collections/pokemon.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -295,6 +295,7 @@ a{
     line-height: 24px;
     margin: 0;
     letter-spacing: 0.67px;
+    margin-bottom: 72px;
 }
 .resume-project-description-container{
     width: 672px;

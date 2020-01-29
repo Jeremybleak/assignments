@@ -23,6 +23,9 @@ const Resume = () => {
                                 </div>
                             </div>
                         </div>
+                            <div>
+                                <h3 className='resume-subtitle'>Experience</h3>
+                            </div>
                     </div>
                 </div>
             </div>
