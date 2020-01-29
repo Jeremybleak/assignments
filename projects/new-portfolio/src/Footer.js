@@ -2,8 +2,10 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            <h3>Jeremy Bleak</h3>
+        <div className='footer-container'>
+            <div className='footer-content'>
+                <h3>© Jeremy Bleak 2020</h3>
+            </div>
         </div>
     );
 };

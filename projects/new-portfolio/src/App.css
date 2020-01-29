@@ -384,3 +384,19 @@ a{
     width: 76%;
     margin: auto;
 }
+
+.footer-container{
+    background-color: #181818;
+    height: 10vh;
+}
+
+.footer-content{
+    width: 76%;
+    color: #FFFFFF;
+    display: flex;
+    margin: auto;
+    border-top: rgba(255,255,255,0.2) 1px solid;
+    font-family: 'heebo-medium';
+    font-size: 14px;
+    align-items: center;
+}
