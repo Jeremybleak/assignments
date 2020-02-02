@@ -225,7 +225,7 @@ a{
     background-color: #181818;
 }
 .resume{
-    height: 250vh;
+    height: 280vh;
     width: 76%;
     margin: auto;
     display: grid;
@@ -264,10 +264,9 @@ a{
 .resume-subtitle{
     font-family: 'heebo-extra-bold';
     font-size: 32px;
-    line-height: 40px;
     letter-spacing: 2px;
     color: #FFFFFF;
-    margin-bottom: 40px;
+    margin-bottom: 4px;
 }
 .resume-project-title-container > h4{
     display: inline-block;
@@ -278,7 +277,8 @@ a{
     color: #FFFFFF;
     font-family: 'heebo-regular';
     letter-spacing: 1.2px;
-
+    margin-top: 54px;
+    margin-bottom: 16px;
 }
 .resume-project-title-container > a{
     display: inline-block;
@@ -300,12 +300,30 @@ a{
 .resume-project-description-container{
     width: 672px;
 }
+.resume-list{
+    color: #B6B6B6;
+    list-style: none;
+    font-family: 'heebo-medium';
+    width: 790px;
+    margin-top: 16px;
+}
+.resume-list > li {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .67px;
+}
+.resume-accomplishments{
+    font-family: 'heebo-medium';
+    color: #B6B6B6;
+    letter-spacing: .67px;
+    padding-left: 16px;
+    border-left: 4px solid #4072FF;
+}
 /* about */
 
 .about-container{
     background-color: #F5F2EE;
 }
-
 .about{
     height: 100vh;
     width: 76%;
@@ -341,7 +359,6 @@ a{
     width: 408px;
     filter: saturate(1.2);
 }
-
 .email{
     color: #4072FF;
     font-size: 16px;
@@ -362,7 +379,6 @@ a{
     justify-content: space-between;
     width: 180px;
 }
-
 .links> a {
     color: #4072FF;
     font-family: 'heebo-bold';
@@ -384,12 +400,11 @@ a{
     width: 76%;
     margin: auto;
 }
-
+/* footer */
 .footer-container{
     background-color: #181818;
-    height: 10vh;
+    height: 13vh;
 }
-
 .footer-content{
     width: 76%;
     color: #FFFFFF;
@@ -399,4 +414,5 @@ a{
     font-family: 'heebo-medium';
     font-size: 14px;
     align-items: center;
+    height: 12vh;
 }
