@@ -135,7 +135,7 @@ a{
 
 /* project */
 .project-container {
-    height: 115vh;
+    height: 120vh;
     background-color: #F5F2EE;
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
@@ -225,7 +225,7 @@ a{
     background-color: #181818;
 }
 .resume{
-    height: 280vh;
+    height: 300vh;
     width: 76%;
     margin: auto;
     display: grid;
@@ -318,6 +318,27 @@ a{
     letter-spacing: .67px;
     padding-left: 16px;
     border-left: 4px solid #4072FF;
+}
+.resume-job-container{
+    margin-bottom: 72px;
+}
+.skill{
+    display: inline-block;
+    color: #ffffff;
+    border: #4072FF 2px solid;
+    margin: 8px 8px;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-family: 'heebo-bold';
+    text-align: center;
+}
+.skill-container{
+    margin-top: 30px;
+    width: 742px;
+}
+.skill > h4{
+    margin: 0px;
+    font-size: 16px;
 }
 /* about */
 
