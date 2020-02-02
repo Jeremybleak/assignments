@@ -93,7 +93,20 @@ const Resume = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>    
+                        </div>  
+                        <div>
+                            <h3 style={{marginTop: '72px'}} className='resume-subtitle'>Education</h3>
+                            <div>
+                                <div>
+                                    <h4 className='resume-project-name'><u style={{color: "#FFFFFF", textDecoration: 'none', fontFamily: 'heebo-extra-bold'}}>V School</u> - (July 2019)</h4>
+                                    <h4 className='education'>Full Stack JavaScript Certificates</h4>
+                                </div>
+                                <div>
+                                    <h4 className='resume-project-name'><u style={{color: "#FFFFFF", textDecoration: 'none', fontFamily: 'heebo-extra-bold'}}>Herriman High</u> - (June 2017)</h4>
+                                    <h4 className='education'>High School Diploma - 3.4 GPA</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -225,7 +225,7 @@ a{
     background-color: #181818;
 }
 .resume{
-    height: 300vh;
+    height: 330vh;
     width: 76%;
     margin: auto;
     display: grid;
@@ -335,11 +335,22 @@ a{
 .skill-container{
     margin-top: 30px;
     width: 742px;
+    margin-bottom: 50px;
 }
 .skill > h4{
     margin: 0px;
     font-size: 16px;
 }
+.education{
+    height: 24px;
+    width: 760px;
+    color: #B6B6B6;
+    font-family: 'heebo-medium';
+    font-size: 16px;
+    letter-spacing: 0.67px;
+    margin: -8px 0px;
+}
+
 /* about */
 
 .about-container{
