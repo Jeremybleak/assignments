@@ -14,7 +14,7 @@ const Resume = () => {
                             <h3 className='resume-subtitle'>Current Projects</h3>
                             <div>
                                 <div className='resume-project-title-container'>
-                                    <h4 className='resume-project-name'><u style={{color: "#FFFFFF", textDecoration: 'none', fontFamily: 'heebo-extra-bold'}}>Airplane Rental Site (Current)</u></h4>
+                                    <h4 className='resume-project-name'><u style={{color: "#FFFFFF", textDecoration: 'none', fontFamily: 'heebo-extra-bold'}}>Airplane Rental Site</u> (Current)</h4>
                                     <a href=""><h5>VIEW PROJECT</h5></a>
                                     <a href=""><h5>GITHUB</h5></a>
                                 </div>
@@ -95,11 +95,11 @@ const Resume = () => {
                             </div>
                         </div>  
                         <div>
-                            <h3 style={{marginTop: '72px'}} className='resume-subtitle'>Education</h3>
+                            <h3 style={{marginTop: '82px'}} className='resume-subtitle'>Education</h3>
                             <div>
                                 <div>
                                     <h4 className='resume-project-name'><u style={{color: "#FFFFFF", textDecoration: 'none', fontFamily: 'heebo-extra-bold'}}>V School</u> - (July 2019)</h4>
-                                    <h4 className='education'>Full Stack JavaScript Certificates</h4>
+                                    <h4 className='education'>Full Stack JavaScript Certificate</h4>
                                 </div>
                                 <div>
                                     <h4 className='resume-project-name'><u style={{color: "#FFFFFF", textDecoration: 'none', fontFamily: 'heebo-extra-bold'}}>Herriman High</u> - (June 2017)</h4>

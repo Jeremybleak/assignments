@@ -324,7 +324,7 @@ a{
 }
 .skill{
     display: inline-block;
-    color: #ffffff;
+    color: #FFFFFF;
     border: #4072FF 2px solid;
     margin: 8px 8px;
     border-radius: 20px;
@@ -431,6 +431,18 @@ a{
     grid-template-rows: 1fr 2fr 1fr;
     width: 76%;
     margin: auto;
+}
+.contact-contents{
+    grid-row-start: 2;
+}
+.contact-title{
+    color: #ffffff;
+    font-family: 'heebo-extra-bold';
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-right: 12px;
+    margin-bottom: 72px;
+    display: inline-block;
 }
 /* footer */
 .footer-container{
