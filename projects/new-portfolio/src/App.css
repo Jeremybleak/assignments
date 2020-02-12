@@ -82,7 +82,7 @@ a{
     text-decoration: underline;
 }
 .hero-animation{
-    animation: fade 400ms 4s 1 forwards linear;
+    animation: fade 400ms 2s 1 forwards linear;
     opacity: 0;
     position: relative;
 }
@@ -164,16 +164,15 @@ a{
 
 /* project */
 .project-container {
-    height: 120vh;
+    height: 110vh;
     background-color: #F5F2EE;
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
 }
 .project{
     grid-row-start: 2;
     width: 76%;
     margin: auto;
-    height: 70vh;
 }
 .project-title{
     font-family: 'heebo-extra-bold';
@@ -546,4 +545,91 @@ a{
     font-size: 14px;
     align-items: center;
     height: 12vh;
+}
+
+
+/* Media Queries */
+/* Tablet */
+
+/* Mobile */
+@media(max-width: 738px){
+    /* navbar */
+    .nav-bar{
+        width: 90%;
+    }
+    .nav-bar-logo{
+        font-size: 16px;
+    }
+    .nav-bar-item{
+        font-size: 12px;
+    }
+    .contact-button{
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    /* hero */
+    .hero{
+        width: 90%;
+    }
+    .hero-content >h1 {
+        font-size: 30px;
+    }
+    .hero-content > h5 {
+        font-size: 14px;
+    }
+    /* project */
+    .project{
+        width: 90%;
+    }
+    .project-items-container {
+        overflow: auto;
+        width: 50%;
+    }
+    .project-item{
+        width: 300px;
+    }
+    .project-description{
+        margin: 0px 16px;
+    }
+    .project-description > h1 {
+        font-family: 'heebo-extra-bold';
+        margin-top: 32px;
+        letter-spacing: .75px;
+        line-height: 32px;
+        color: #181818;
+    }
+    .project-description > h5 {
+        line-height: 18px;
+        color: #656565;
+        font-size: 12px;
+        width: 90%;
+        height: 90px;
+    }
+    .project-button {
+        grid-row-start: 3;
+        font-size: 16px;
+        margin-top: 24px;
+        letter-spacing: 2.4px;
+    }
+    /* resume */
+    .resume{
+        width: 90%;
+    }
+    /* contact */
+    .contact{
+        width: 90%;
+    }
+    .form-alignment{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 16px;
+        height: 324px;
+    }
+    .input-text{
+        width: 70%;
+    }
+    /* footer */
+    .footer-content{
+        width: 90%;
+    }
 }
