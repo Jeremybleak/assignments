@@ -630,7 +630,7 @@ a{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-row-gap: 16px;
-        height: 324px;
+        height: 360px;
     }
     .input-text{
         width: 70%;
