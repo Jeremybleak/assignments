@@ -25,20 +25,28 @@ class Contact extends Component {
             message: this.state.message
         }
         e.preventDefault()
-    emailjs.send('gmail','template_xR1TCyQH', templateParams, 'user_xXi8Wnknm7yCR0R6a7mLt')
-    .then((response) => {
-       console.log('SUCCESS!', response.status, response.text);
-       this.setState({
-           status: 'Sent!'
-       })
-    }, (err) => {
-       console.log('FAILED...', err);
-    });
-    this.setState({
-        name: '',
-        email: '',
-        message: ''
-    })
+        if(this.state.name === '' || this.state.email === '' || this.state.message === ''){
+            this.setState({
+                status: 'PLEASE FILL ALL THE PARAMATERS'
+            })
+            
+        } else{
+            emailjs.send('gmail','template_xR1TCyQH', templateParams, 'user_xXi8Wnknm7yCR0R6a7mLt')
+            .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            this.setState({
+                status: 'SENT!'
+            })
+            }, (err) => {
+            console.log('FAILED...', err);
+            });
+            this.setState({
+                name: '',
+                email: '',
+                message: ''
+            })
+
+        }
     }
     render() {
         return (
@@ -53,7 +61,7 @@ class Contact extends Component {
                                 <textarea placeholder='Message'  onChange={this.handleChange} value={this.state.message} name='message' className='input-type' rows="4" cols="50">
                                 </textarea>
                                 <button className='form-button'>SUBMIT</button>
-                                <h3>{this.state.status}</h3>
+                                <h3 className='status' style={ this.state.status==='SENT!'?{color:'green'} : {color:'red'}}>{this.state.status}</h3>
                             </form>
                         </div>
                     </div>

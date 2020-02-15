@@ -519,6 +519,13 @@ a{
     height: 50px;
     box-shadow: 2px 2px 5px #4072FF;
 }
+.status{
+    font-family: 'heebo-bold';
+    letter-spacing: 2.4px;
+    position: relative;
+    margin: 0;
+    align-self: center;
+}
 .form-button:hover{
     background-color: #181818;
     color: #FFFFFF;
@@ -628,6 +635,7 @@ a{
     .input-text{
         width: 70%;
     }
+    
     /* footer */
     .footer-content{
         width: 90%;
