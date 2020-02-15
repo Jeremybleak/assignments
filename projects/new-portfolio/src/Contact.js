@@ -20,6 +20,7 @@ class Contact extends Component {
         this.setState({
             [name]: value
         })
+        this.colorChange(e)
     }
     handleSubmit = (e) => {
         let templateParams = {
@@ -58,7 +59,7 @@ class Contact extends Component {
             }
             console.log(this.state.nameColor)
             this.setState({
-                status: "OOPS! YOU'RE MISSING SOMETHING"
+                status: "OOPS! YOU'RE MISSING SOMETHING."
             })
             
         } else{
@@ -82,6 +83,19 @@ class Contact extends Component {
 
         }
     }
+    colorChange = (e) => {
+        const name = e.target.name
+        const target = `${name}Color`
+        if(e.target.value === ''){
+            this.setState({
+                [target]: 'red'
+            })
+        }else(
+            this.setState({
+                [target]: ''
+            })
+        )
+    }
     render() {
         return (
             <div id='contact'  className='contact-container'>
@@ -91,8 +105,8 @@ class Contact extends Component {
                         <div>
                             <form className='form-alignment' action="" onSubmit={this.handleSubmit}>
                                 <input className='input-text' style={{borderColor:this.state.nameColor}} onChange={this.handleChange} value={this.state.name} name='name' type="text" placeholder='Name' />
-                                <input className='input-text' style={{borderColor: this.state.emailColor}}  onChange={this.handleChange} value={this.state.email} name='email' type="email" placeholder='Email' />
-                                <textarea placeholder='Message' style={{borderColor: this.state.messageColor}}  onChange={this.handleChange} value={this.state.message} name='message' className='input-type' rows="4" cols="50">
+                                <input className='input-text' style={{borderColor: this.state.emailColor}} onChange={this.handleChange} value={this.state.email} name='email' type="email" placeholder='Email' />
+                                <textarea placeholder='Message' style={{borderColor: this.state.messageColor}} onChange={this.handleChange} value={this.state.message} name='message' className='input-type' rows="4" cols="50">
                                 </textarea>
                                 <button className='form-button'>SUBMIT</button>
                                 <h3 className='status' style={ this.state.status==='SENT!'?{color:'#4072FF'} : {color:'red'}}>{this.state.status}</h3>
