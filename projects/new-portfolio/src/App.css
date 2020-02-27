@@ -592,6 +592,7 @@ a{
     .project-items-container {
         overflow: auto;
         width: 50%;
+        
     }
     .project-item{
         width: 300px;
@@ -622,6 +623,97 @@ a{
     /* resume */
     .resume{
         width: 90%;
+    }
+    .resume-title{
+        display: inline-block;
+        font-weight: 800;
+        justify-content: space-between;
+        align-items: center
+    }
+    .resume-title > h1 {
+        font-family: 'heebo-extra-bold';
+        font-size: 48px;
+        letter-spacing: 2px;
+        margin-right: 12px;
+        margin-bottom: 72px;
+        display: inline-block;
+    }
+    .resume-title > a > h5 {
+        font-family: 'heebo-bold';
+        letter-spacing: 3px;
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 24px;
+    }
+    .resume-title > a > h5:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .resume-subtitle{
+        font-size: 32px;
+        letter-spacing: 2px;
+        margin-bottom: 4px;
+    }
+    .resume-project-title-container > h4{
+        display: inline-block;
+        margin-right: 12px;
+    }
+    .resume-project-name{
+        font-size: 20px;
+        margin-top: 54px;
+        margin-bottom: 16px;
+    }
+    .resume-project-title-container > a{
+        display: inline-block;
+        letter-spacing: 2.4px;
+        margin: 0px 12px;
+        font-size: 20px;
+    }
+    .resume-project-description{
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+        letter-spacing: 0.67px;
+        margin-bottom: 72px;
+    }
+    .resume-project-description-container{
+        width: 672px;
+    }
+    .resume-list{
+        list-style: none;
+        width: 400px;
+        margin-top: 16px;
+    }
+    .resume-list > li {
+        font-size: 14px;
+        letter-spacing: .30px;
+    }
+    .resume-accomplishments{
+        letter-spacing: .67px;
+        padding-left: 16px;
+        border-left: 4px solid #4072FF;
+    }
+    .resume-job-container{
+        margin-bottom: 72px;
+    }
+    .skill{
+        margin: 8px 8px;
+    }
+    .skill-container{
+        margin-top: 30px;
+        width: 742px;
+        margin-bottom: 50px;
+    }
+    .skill > h4{
+        margin: 0px;
+        font-size: 16px;
+    }
+    .education{
+        height: 24px;
+        width: 760px;
+        font-size: 16px;
+        letter-spacing: 0.67px;
+        margin: -8px 0px;
     }
     /* contact */
     .contact{
