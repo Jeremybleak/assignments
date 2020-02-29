@@ -15,7 +15,6 @@ const Resume = () => {
                             <div>
                                 <div className='resume-project-title-container'>
                                     <h4 className='resume-project-name'><u style={{color: "#FFFFFF", textDecoration: 'none', fontFamily: 'heebo-extra-bold'}}>Airplane Rental Site</u> (Current)</h4>
-                                    <a href=""><h5>VIEW PROJECT</h5></a>
                                     <a href=""><h5>GITHUB</h5></a>
                                 </div>
                                 <div className='resume-project-description-container'>
