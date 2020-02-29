@@ -19,9 +19,6 @@ const Nav = () => {
                         <a href='/#contact'><button className='contact-button'>CONTACT</button></a>
                     </div>
                 </div>
-                <div>
-                    <button className='mobile-nav'>=</button>
-                </div>
             </div>
         </div>    
     );
