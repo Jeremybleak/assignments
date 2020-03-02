@@ -193,6 +193,8 @@ a{
     position: relative;
     background-color: #FFFFFF;
     border: 2px solid #E9E2DA;
+    height: 438px;
+
 }
 .project-item:hover{
     transform: translateY(-8px);
@@ -451,7 +453,13 @@ a{
 .links > a:hover{
     text-decoration: underline;
 }
+.say-hi{
+    color: #4072FF;
 
+}
+.say-hi:hover{
+    text-decoration: underline;
+}
 /* contact */
 .contact-container{
     background-color: #181818;
@@ -589,10 +597,12 @@ a{
     .hero-content >h1 {
         font-size: 30px;
         line-height: 1.4;
-
     }
     .hero-content > h5 {
         font-size: 14px;
+    }
+    .hero-button{
+        font-size: 16px;
     }
     /* project */
     .project{
@@ -604,11 +614,20 @@ a{
         width: 50%;
     }
     .project-items-container {
+        /* overflow-y: scroll; */
         overflow: auto;
-        width: 100%;
+        width: 90%;
+        /* height: auto; */
+        display: inline-block;
     }
     .project-item{
-        width: 100px;
+        width: 300px;
+        height: 90%;
+    }
+    .project-item:hover{
+        transform: translateY(0px);
+        transition-duration: 400ms;
+        box-shadow: none;
     }
     .project-description{
         margin: 0px 16px;

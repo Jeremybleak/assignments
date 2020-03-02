@@ -7,7 +7,7 @@ const Resume = () => {
                 <div className='resume-items'>
                     <div className='resume-title'>
                         <h1>Resume</h1>
-                        <a href='' download><h5>DOWNLOAD PDF</h5></a>
+                        <a href='https://docs.google.com/document/u/0/export?format=pdf&id=1s_LoaKR1AhbNg6PFxYLcUQ7vzctVb_m9ogv75YwAxko&token=AC4w5ViXlq1BQGOVIfUAxC2wxKa6FTLbiw%3A1583134245868&ouid=107497411704081452870&includes_info_params=true' download><h5>DOWNLOAD PDF</h5></a>
                     </div>
                     <div>
                         <div>

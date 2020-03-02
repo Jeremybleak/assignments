@@ -7,7 +7,7 @@ const About = () => {
                 <div className='about-items'>
                     <div className='about-flex-one'>
                         <h1 className='about-title'>About</h1>
-                        <h5>Recreated using React, designed by a UX Designer with Sketch. This is my very first responsive project. The assignment was to create a website for a ficticious company. Recreated using React, designed by a UX Designer with Sketch. This is my very first responsive project. The assignment was to create a website.</h5>
+                        <h5>A tall, goofy, curly haired guy, who has had a passion for building since his Minecraft days. I find excitement about creating/learning new things, and am constantly looking for new challenges and puzzles to solve. I love meeting new people! <a className='say-hi' href='#contact'>Say hi!</a></h5>
                         <div>
                             <a className='email' href="mailto: Jeremybleak99@gmail.com"><h4>JEREMYBLEAK99@GMAIL.COM</h4></a>
                             <div className='links'>
