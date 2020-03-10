@@ -258,7 +258,7 @@ a{
     background-color: #181818;
 }
 .resume{
-    height: 330vh;
+    height: auto;
     width: 76%;
     margin: auto;
     display: grid;
@@ -421,7 +421,7 @@ a{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 408px;
+    width: 50%;
     filter: saturate(1.2);
 }
 .email{
