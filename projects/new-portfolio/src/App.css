@@ -417,11 +417,11 @@ a{
     color: #181818;
 }
 .profile-pic{
-    background-image: url('./assets/Jeremysitting.JPEG');
+    background-image: url('./assets/JeremySalt.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 40%;
     /* filter: saturate(1.2); */
 }
 .email{
