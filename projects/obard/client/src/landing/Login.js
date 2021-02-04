@@ -8,7 +8,7 @@ export default function Login() {
                     <input type="text"/>
                     <input type="text"/>
                     <input type="text"/>
-                    <button></button>
+                    <button>login</button>
                 </form>
             </div>
         )

@@ -7,15 +7,18 @@ export default class Landing extends Component {
         super(props)
     
         this.state = {
-             account: true
+             account: true,
+             message: ''
         }
     }
     
-    account = (e) =>{
+    accountChange = (e) =>{
         e.preventDefault()
+        let value = this.state.account
         this.setState({
-            account: this.state.account == true ? false : true
+            account: !value
         })
+        console.log(this.state.account)
     }
     
     render() {
@@ -25,8 +28,8 @@ export default class Landing extends Component {
                 <div>
                     <div></div>
                     <div>
-                        {this.state.account = true ? Login : SignUp}
-                        <button onClick={this.account}>{this.state.account = true ? "Dont have an account? Sign up!" : "Return to Login" }</button>
+                        {this.state.account === true ? <Login/> :<SignUp/>}
+                         <button onClick={this.accountChange}><h1>{this.state.account === true ? 'Bitch' : 'fuck'}</h1></button>
                     </div>
                 </div>
             </div>
