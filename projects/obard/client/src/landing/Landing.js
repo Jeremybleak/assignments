@@ -8,7 +8,6 @@ export default class Landing extends Component {
     
         this.state = {
              account: true,
-             message: ''
         }
     }
     
