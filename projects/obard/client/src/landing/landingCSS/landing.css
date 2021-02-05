@@ -1,6 +1,20 @@
-.landing-container-div{
+body{
+    margin: 0;
+}
+
+.landing-background{
     height: 100vh;
+    background-image: url("./cssAssets/Piper.jpg") ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0px;
+}
+
+
+.landing-container-div{
+    height: 40vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    margin: auto;
 }

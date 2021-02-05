@@ -26,7 +26,7 @@ export default class Landing extends Component {
     render() {
         console.log(this.state.account)
         return(
-            <div>
+            <div className='landing-background'>
                 <div className="landing-container-div">
                     <div></div>
                     <div>
