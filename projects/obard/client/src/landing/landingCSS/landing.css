@@ -25,3 +25,12 @@ body{
     grid-template-columns: 1fr 1fr;
     margin: auto;
 }
+
+.landing-container-div > :nth-child(2) {
+    background-color: white;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
