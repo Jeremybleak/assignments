@@ -4,15 +4,21 @@ body{
 
 .landing-background{
     height: 100vh;
-    background-image: url("./cssAssets/Piper.jpg") ;
+    background-image: url("./cssAssets/Piper.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
     margin: 0px;
 }
+.landing-filter-background{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 0px;
+}
 
 
-.landing-container-div{
+.landing-container-div{ 
     height: 40vh;
     display: grid;
     grid-template-columns: 1fr 1fr;

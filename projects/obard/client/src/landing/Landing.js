@@ -27,13 +27,15 @@ export default class Landing extends Component {
         console.log(this.state.account)
         return(
             <div className='landing-background'>
-                <div className="landing-container-div">
-                    <div></div>
-                    <div>
-                        {this.state.account === true ? <Login/> :<SignUp/>}
-                        <button onClick={this.accountChange}>{this.state.account === true ? 'Dont have an account? Sign up!' : 'Return to Login'}</button>
+                <div className='landing-filter-background'>
+                    <div className="landing-container-div">
+                        <div></div>
+                        <div>
+                            {this.state.account === true ? <Login/> :<SignUp/>}
+                            <button onClick={this.accountChange}>{this.state.account === true ? 'Dont have an account? Sign up!' : 'Return to Login'}</button>
+                        </div>
                     </div>
-                </div>
+                 </div>
             </div>
         )
     }
