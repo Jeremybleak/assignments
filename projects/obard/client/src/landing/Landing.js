@@ -29,10 +29,11 @@ export default class Landing extends Component {
             <div className='landing-background'>
                 <div className='landing-filter-background'>
                     <div className="landing-container-div">
-                        <div></div>
                         <div>
+                        <button onClick={this.accountChange}>{this.state.account === true ? 'Dont have an account? Sign up!' : 'Return to Login'}</button>
+                        </div>
+                        <div className='alternating-form-container'>
                             {this.state.account === true ? <Login/> :<SignUp/>}
-                            <button onClick={this.accountChange}>{this.state.account === true ? 'Dont have an account? Sign up!' : 'Return to Login'}</button>
                         </div>
                     </div>
                  </div>
