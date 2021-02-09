@@ -3,8 +3,8 @@ import React from 'react'
 export default function SignUp() {
         return (
             <div>
-            <h2 className="returning-customers">Returning Customers</h2>
-            <form className="login-form" action="">
+            <h2 className="returning-customers">Create an Account</h2>
+            <form className="signup-form" action="">
                 <h3>Username</h3>
                 <input className='login-username-input' type="text"/>
                 <h3>Password</h3>

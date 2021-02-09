@@ -26,7 +26,7 @@ body{
     margin: auto;
 }
 .dividing-line{
-    height: 90%;
+    height: 50vh;
     background-color: #ffa8a8;
     width: 4px;
     border-radius: 25px;
@@ -88,4 +88,20 @@ body{
     margin-top: 24px;
     border-radius: 25px;
     border: none;
+}
+
+/* Sign up page */
+
+.signup-form{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.signup-form > h3{
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 4px;
+    font-weight: 100;
 }
