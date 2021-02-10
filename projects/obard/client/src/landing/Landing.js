@@ -30,7 +30,9 @@ export default class Landing extends Component {
                 <div className='landing-filter-background'>
                     <div className="landing-container-div">
                         <div>
-                        <button onClick={this.accountChange}>{this.state.account === true ? 'Dont have an account? Sign up!' : 'Return to Login'}</button>
+                            <h1>O-D</h1>
+
+                        <h3>{this.state.account === true ? "Not Registered?" : "Already Registered?"}    <button className="form-switch-button" onClick={this.accountChange}>{this.state.account === true ? 'Sign Up Here!' : 'Login'}</button></h3>
                         </div>
                         <div className='dividing-line'></div>
                         <div className='alternating-form-container'>
