@@ -32,6 +32,7 @@ body{
     width: 4px;
     border-radius: 25px;
     opacity: 50%;
+    display: grid;
 }
 
 .alternating-form-container {
@@ -125,4 +126,22 @@ body{
     font-size: 32px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 48px;
+}
+.login-signup-question{
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+.form-switch-button{
+    background: none;
+    color: #DE6262;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    /* padding-bottom: 4px; */
+    border-bottom: solid rgba(255, 255, 255, 0.7) 4px;
+}
+.form-switch-button:hover{
+    color: #ffffff;
+    
 }
