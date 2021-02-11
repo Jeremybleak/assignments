@@ -40,7 +40,6 @@ body{
     height: 90%;
     display: grid;
     justify-content: center;
-    grid-template-rows: 1fr 1fr;
     width: 100%;
 }
 
@@ -57,7 +56,7 @@ body{
 }
 
 .login-form{
-    height: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,7 +94,7 @@ body{
 /* Sign up page */
 
 .signup-form{
-    height: 90%;
+    height: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
