@@ -100,7 +100,6 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 29;
 }
 .signup-form > h3{
     color: #ffffff;
