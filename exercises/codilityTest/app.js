@@ -6,9 +6,10 @@ let solution = (S,K) => {
     }
     let dayOfWeek = week.indexOf(S)
     let newDay = dayOfWeek + K
+    console.log(week[newDay])
     return week[newDay]
 }
 
 
 
-
+solution('Sun', 10)
