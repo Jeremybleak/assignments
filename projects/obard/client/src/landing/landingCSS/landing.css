@@ -44,7 +44,7 @@ body{
     width: 100%;
 }
 
-/* Login Component */
+/* Login Component and form */
 
 .returning-customers{
     justify-self: right;
@@ -63,6 +63,7 @@ body{
     justify-content: center;
     width: 100%;
 }
+
 .login-form > h3{
     color: #ffffff;
     font-size: 24px;
