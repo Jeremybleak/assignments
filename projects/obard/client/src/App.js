@@ -5,7 +5,7 @@ import Home from './User.js/Home/Home'
 const App = () => {
     return(
         <div>
-            <Landing/>
+            {/* <Landing/> */}
             <Home />
         </div>
     )
